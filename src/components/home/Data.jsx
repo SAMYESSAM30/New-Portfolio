@@ -56,10 +56,10 @@ const Data = () => {
         </svg>{" "}
       </h1>
       <h3 className="home__subtitle">
-        Visual Developer
+        Frontend Developer
       </h3>
       <p className="home__description">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, eius.      </p>
+        Designing innovative solutions with user-centric focus.  </p>
       <a href="#contact" className="button button--flex" >
         Say Hello
         <svg

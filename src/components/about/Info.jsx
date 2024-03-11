@@ -26,12 +26,12 @@ let data = [
   {
     num: 1,
     title: 'Experiennce',
-    subtitle: '8 Years Working',
+    subtitle: '3 Years Working',
     icon: <i class='bx bx-award about__icon'></i>
   },
   {
     title: 'Completed',
-    subtitle: '20 + Projects',
+    subtitle: '10 + Projects',
     icon: <i class='bx bx-briefcase-alt about__icon' ></i>
   },
   {

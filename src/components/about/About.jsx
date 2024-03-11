@@ -13,9 +13,7 @@ const About = () => {
         <div className="about__data">
           <Info />
           <p className="about__description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Consequuntur sit odit reiciendis nostrum aperiam natus perspiciatis
-            quos accusamus dolores maxime.
+            Unveiling the journey of front-end development, from inception to mastery, navigating through trends, tools, and the art of user interaction.
           </p>
           <a href={CV} download='' className="button button--flex">
             Download CV
