@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
-import "./Header.css"
+import React, { useState } from "react";
+import "./Header.css";
 const Header = () => {
-  const [Toggle, ShowMenu] = useState(false)
+  const [Toggle, ShowMenu] = useState(false);
   return (
     <header className="header">
       <nav className="nav container">
-        <a href="index.html" className="nav__logo">Samy</a>
+        <a href="index.html" className="nav__logo">
+          Samy
+        </a>
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">
@@ -20,6 +22,7 @@ const Header = () => {
                 <i className="uil uil-user nav__icon"></i> About
               </a>
             </li>
+            {/*  */}
           </ul>
           <ul className="nav__list grid">
             <li className="nav__item">
@@ -40,24 +43,29 @@ const Header = () => {
             <li className="nav__item">
               <a href="#portfolio" className="nav__link">
                 <i className="uil uil-scenery nav__icon"></i>
-                Portfolio</a>
+                Portfolio
+              </a>
             </li>
           </ul>
           <ul className="nav__list grid">
             <li className="nav__item">
               <a href="#contact" className="nav__link">
                 <i className="uil uil-message nav__icon"></i>
-                Contact</a>
+                Contact
+              </a>
             </li>
           </ul>
-          <i className='uil uil-times nav__close' onClick={() => ShowMenu(!Toggle)}></i>
+          <i
+            className="uil uil-times nav__close"
+            onClick={() => ShowMenu(!Toggle)}
+          ></i>
         </div>
         <div className="nav__toggle" onClick={() => ShowMenu(!Toggle)}>
-          <i className='uil uil-apps'></i>
+          <i className="uil uil-apps"></i>
         </div>
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
