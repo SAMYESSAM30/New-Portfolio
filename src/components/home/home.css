@@ -78,7 +78,7 @@
   margin-left: 9.25rem;
 }
 .wheel {
-  animation: sceoll 2s ease infinite;
+  animation: scroll 2s ease infinite;
 }
 @keyframes scroll {
   0% {
@@ -86,7 +86,7 @@
   }
 
   30% {
-    transform: translateY(3.75rem);
+    transform: translateY(4.5rem);
   }
 }
 .home__scroll-name {
