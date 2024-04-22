@@ -6,7 +6,7 @@ const ContectForm = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_vuk6pat",
+      "service_lqf3yrg",
       "template_7bpw1cc",
       form.current,
       "qExeYcru3nOSuO9Go"
