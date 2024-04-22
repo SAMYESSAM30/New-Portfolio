@@ -13,16 +13,18 @@
   margin: 0 var(--mb-1);
   cursor: pointer;
 }
-.qualifcation__icon:hover {
+.qualifcation__button:hover {
   color: var(--title-color-dark);
 }
 .qualifcation__icon {
   font-size: 1.8rem;
   margin-right: var(--mb-0-25);
 }
+
 .qualifcation__active {
-  font-size: 1.8rem;
-  margin-right: var(--mb-0-25);
+  /* font-size: 1.8rem;
+  margin-right: var(--mb-0-25); */
+  color: var(--title-color-dark);
 }
 .qualifcation__sections {
   display: grid;
@@ -69,15 +71,15 @@
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   .qualifcation__container {
     margin-left: auto;
     margin-right: auto;
   }
-}
+} */
 
 /* For medium devices */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .qualifcation__container {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
@@ -96,4 +98,4 @@
   .qualifcation__data {
     gap: 0.5rem;
   }
-}
+} */

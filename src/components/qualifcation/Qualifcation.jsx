@@ -5,12 +5,13 @@ export const Qualifcation = () => {
   const toggleTop = (index) => {
     setToggleState(index);
   };
+
   return (
     <section className="qualifcation section" id="qualifcation">
       <h2 className="section__title">Qualifcation</h2>
       <span className="section__subtitle">My Personel journey</span>
 
-      <div className="qualifcation__container container ">
+      <div className="qualifcation__container container">
         <div className="qualifcation__tabs">
           <div
             className={
@@ -23,6 +24,7 @@ export const Qualifcation = () => {
             <i className="uil uil-graduation-cap qualifcation__icon"></i>
             Education
           </div>
+
           <div
             className={
               toggleState === 2
@@ -31,9 +33,8 @@ export const Qualifcation = () => {
             }
             onClick={() => toggleTop(2)}
           >
-            <i className="uil uil-briefcase-alt qualifcation__icon">
-              Experience
-            </i>
+            <i className="uil uil-briefcase-alt qualifcation__icon"></i>
+            Experience
           </div>
         </div>
         <div className="qualifcation__sections">
@@ -46,7 +47,6 @@ export const Qualifcation = () => {
           >
             {/* Data1 */}
             <div className="qualifcation__data">
-              {" "}
               <div>
                 <h3 className="qualifcation__title">Web Design</h3>
                 <span className="qualifcation__subtitle">
@@ -112,16 +112,14 @@ export const Qualifcation = () => {
                 </div>
               </div>
             </div>
-            <div></div>
           </div>
-
-          {/*  */}
+          {/* end data one */}
 
           <div
             className={
               toggleState === 2
                 ? "qualifcation__content qualifcation__content-active"
-                : "qualifcation__content "
+                : "qualifcation__content"
             }
           >
             {/* Data1 */}
@@ -173,13 +171,9 @@ export const Qualifcation = () => {
                 <span className="qualifcation__line"></span>
               </div>
             </div>
-
-            <div></div>
           </div>
         </div>
       </div>
     </section>
   );
 };
-
-
