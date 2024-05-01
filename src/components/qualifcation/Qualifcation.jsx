@@ -37,6 +37,7 @@ export const Qualifcation = () => {
             Experience
           </div>
         </div>
+        {/* education */}
         <div className="qualifcation__sections">
           <div
             className={
@@ -48,12 +49,14 @@ export const Qualifcation = () => {
             {/* Data1 */}
             <div className="qualifcation__data">
               <div>
-                <h3 className="qualifcation__title">Web Design</h3>
+                <h3 className="qualifcation__title">
+                  Internship in Frontend developer
+                </h3>
                 <span className="qualifcation__subtitle">
-                  spain - Institute
+                  Egy - Syntrum Solutions
                 </span>
                 <div className="qualifcation__calender">
-                  <i className="uil uil-calendar-alt">2021 - present</i>
+                  <i className="uil uil-calendar-alt">2022 - 2022</i>
                 </div>
               </div>
               <div>
@@ -69,12 +72,59 @@ export const Qualifcation = () => {
                 <span className="qualifcation__line"></span>
               </div>{" "}
               <div>
-                <h3 className="qualifcation__title">Art Director</h3>
+                <h3 className="qualifcation__title">
+                  bachelor’s degree in MIS
+                </h3>
                 <span className="qualifcation__subtitle">
-                  spain - Institute
+                  Egy - Thebes Academy
                 </span>
                 <div className="qualifcation__calender">
-                  <i className="uil uil-calendar-alt"> 2021 - 2022 </i>
+                  <i className="uil uil-calendar-alt"> 2018 - 2020 </i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Experience */}
+
+          <div
+            className={
+              toggleState === 2
+                ? "qualifcation__content qualifcation__content-active"
+                : "qualifcation__content"
+            }
+          >
+            {/* Data1 */}
+            <div className="qualifcation__data">
+              {" "}
+              <div>
+                <h3 className="qualifcation__title">Frontend Developer</h3>
+                <span className="qualifcation__subtitle">
+                  E2E County - on side
+                </span>
+                <div className="qualifcation__calender">
+                  <i className="uil uil-calendar-alt">2023 - Current</i>
+                </div>
+              </div>
+              <div>
+                <span className="qualifcation__rounder"></span>
+                <span className="qualifcation__line"></span>
+              </div>
+            </div>
+            {/* Data2 */}
+            <div className="qualifcation__data">
+              <div></div>
+              <div>
+                <span className="qualifcation__rounder"></span>
+                <span className="qualifcation__line"></span>
+              </div>{" "}
+              <div>
+                <h3 className="qualifcation__title">Frontend Developer </h3>
+                <span className="qualifcation__subtitle">
+                  Syntrum Solutions - hybrid
+                </span>
+                <div className="qualifcation__calender">
+                  <i className="uil uil-calendar-alt"> 2022 - 2023 </i>
                 </div>
               </div>
             </div>
@@ -82,12 +132,12 @@ export const Qualifcation = () => {
             <div className="qualifcation__data">
               {" "}
               <div>
-                <h3 className="qualifcation__title">Web development</h3>
+                <h3 className="qualifcation__title">Frontend Developer</h3>
                 <span className="qualifcation__subtitle">
-                  spain - Institute
+                  Freelance - Remote
                 </span>
                 <div className="qualifcation__calender">
-                  <i className="uil uil-calendar-alt">2021 - present</i>
+                  <i className="uil uil-calendar-alt">2021 - Current</i>
                 </div>
               </div>
               <div>
@@ -103,72 +153,13 @@ export const Qualifcation = () => {
                 <span className="qualifcation__line"></span>
               </div>{" "}
               <div>
-                <h3 className="qualifcation__title">UX Expert</h3>
+                <h3 className="qualifcation__title">.Net Developer</h3>
                 <span className="qualifcation__subtitle">
-                  spain - Institute
+                  Freelance - Remote
                 </span>
                 <div className="qualifcation__calender">
-                  <i className="uil uil-calendar-alt"> 2019 - 2018 </i>
+                  <i className="uil uil-calendar-alt"> 2020 - 2021 </i>
                 </div>
-              </div>
-            </div>
-          </div>
-          {/* end data one */}
-
-          <div
-            className={
-              toggleState === 2
-                ? "qualifcation__content qualifcation__content-active"
-                : "qualifcation__content"
-            }
-          >
-            {/* Data1 */}
-            <div className="qualifcation__data">
-              {" "}
-              <div>
-                <h3 className="qualifcation__title">Product Designer</h3>
-                <span className="qualifcation__subtitle">
-                  spain - Institute
-                </span>
-                <div className="qualifcation__calender">
-                  <i className="uil uil-calendar-alt">2021 - present</i>
-                </div>
-              </div>
-              <div>
-                <span className="qualifcation__rounder"></span>
-                <span className="qualifcation__line"></span>
-              </div>
-            </div>
-            {/* Data2 */}
-            <div className="qualifcation__data">
-              <div></div>
-              <div>
-                <span className="qualifcation__rounder"></span>
-                <span className="qualifcation__line"></span>
-              </div>{" "}
-              <div>
-                <h3 className="qualifcation__title">UX Designer</h3>
-                <span className="qualifcation__subtitle">
-                  spain - Institute
-                </span>
-                <div className="qualifcation__calender">
-                  <i className="uil uil-calendar-alt"> 2021 - 2022 </i>
-                </div>
-              </div>
-            </div>
-            {/* Data3 */}
-            <div className="qualifcation__data">
-              {" "}
-              <div>
-                <h3 className="qualifcation__title">Web Designer</h3>
-                <span className="qualifcation__subtitle">Figma - spain</span>
-                <div className="qualifcation__calender">
-                  <i className="uil uil-calendar-alt">2021 - present</i>
-                </div>
-              </div>
-              <div>
-                <span className="qualifcation__rounder"></span>
-                <span className="qualifcation__line"></span>
               </div>
             </div>
           </div>

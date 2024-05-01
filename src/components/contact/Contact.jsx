@@ -44,12 +44,12 @@ export const Contact = () => {
               </a>
             </div>
             <div className="contact__card">
-              <i className="bx bxl-messenger contact__card-icon"></i>
-              <h3 className="contact__card-title">Messenger</h3>
+              <i className="bx bxl-instagram contact__card-icon"></i>
+              <h3 className="contact__card-title">Instegram</h3>
               <sapn className="contact__card-data">user.fb123</sapn>
 
               <a
-                href="https://m.me/crypticalcoder"
+                href="https://www.instagram.com/santa__30__/"
                 target="_blank"
                 className="contact__button"
               >

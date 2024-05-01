@@ -15,7 +15,9 @@ const Services = () => {
           <div>
             <i className="uil uil-web-grid services__icon"></i>
             <h3 className="services__title">
-              Product <br /> Designer
+              Custom
+              <br />
+              Web Design
             </h3>
           </div>
           <span className="services__button" onClick={() => toggleTop(1)}>
@@ -34,13 +36,13 @@ const Services = () => {
                 onClick={() => toggleTop(0)}
                 className="uil uil-times services__modal-close"
               ></i>
-              <h3 className="services__modal-title">Product Designer</h3>
+              <h3 className="services__modal-title">Custom Web Design</h3>
               <p className="services__modal-descirtion">
                 Service with more than 3 years of experience. Providing quality
                 work to clients and companies.
               </p>
               <ui className="services__modal-services grid">
-                {data.map((item, index) => {
+                {dataCustomWebDesign.map((item, index) => {
                   return (
                     <li className="services__modal-service" key={index}>
                       {item.icon}
@@ -57,8 +59,8 @@ const Services = () => {
           <div>
             <i className="uil uil-arrow services__icon"></i>
             <h3 className="services__title">
-              Ui/Ux
-              <br /> Designer
+              Front-end
+              <br /> Development
             </h3>
           </div>
           <span className="services__button" onClick={() => toggleTop(2)}>
@@ -77,13 +79,13 @@ const Services = () => {
                 onClick={() => toggleTop(0)}
                 className="uil uil-times services__modal-close"
               ></i>
-              <h3 className="services__modal-title">Ui/Ux Designer</h3>
+              <h3 className="services__modal-title">Front-end Development</h3>
               <p className="services__modal-descirtion">
                 Service with more than 3 years of experience. Providing quality
                 work to clients and companies.
               </p>
               <ui className="services__modal-services grid">
-                {data.map((item, index) => {
+                {dataFrontendDevelopment.map((item, index) => {
                   return (
                     <li className="services__modal-service" key={index}>
                       {item.icon}
@@ -100,7 +102,8 @@ const Services = () => {
           <div>
             <i className="uil uil-edit services__icon"></i>
             <h3 className="services__title">
-              Visual <br /> Designer
+              Full-stack
+              <br /> Solutions
             </h3>
           </div>
           <span className="services__button" onClick={() => toggleTop(3)}>
@@ -119,13 +122,13 @@ const Services = () => {
                 onClick={() => toggleTop(0)}
                 className="uil uil-times services__modal-close"
               ></i>
-              <h3 className="services__modal-title">Visual Designer</h3>
+              <h3 className="services__modal-title">Full-stack Solutions</h3>
               <p className="services__modal-descirtion">
                 Service with more than 3 years of experience. Providing quality
                 work to clients and companies.
               </p>
               <ui className="services__modal-services grid">
-                {data.map((item, index) => {
+                {dataFullStackSolutions.map((item, index) => {
                   return (
                     <li className="services__modal-service" key={index}>
                       {item.icon}
@@ -143,21 +146,58 @@ const Services = () => {
 };
 
 export default Services;
-const data = [
+const dataCustomWebDesign = [
   {
     icon: <i className="uil uil-check-circle services__modal-icon"></i>,
-    describtion: "I develop the user interface.",
+    describtion: "Tailored designs to reflect your brand identity.",
   },
   {
     icon: <i className="uil uil-check-circle services__modal-icon"></i>,
-    describtion: "Web page development",
+    describtion: "Responsive layouts for seamless user experience.",
   },
   {
     icon: <i className="uil uil-check-circle services__modal-icon"></i>,
-    describtion: "I create ux element interactions.",
+    describtion: "Integration of modern UI/UX principles.",
   },
   {
     icon: <i className="uil uil-check-circle services__modal-icon"></i>,
-    describtion: "Design and mockups of products for companies",
+    describtion: "Cross-browser and cross-device compatibility.",
+  },
+];
+const dataFrontendDevelopment = [
+  {
+    icon: <i className="uil uil-check-circle services__modal-icon"></i>,
+    describtion: "Building interactive and engaging user interfaces.",
+  },
+  {
+    icon: <i className="uil uil-check-circle services__modal-icon"></i>,
+    describtion: "Utilizing HTML, CSS, and JavaScript frameworks.",
+  },
+  {
+    icon: <i className="uil uil-check-circle services__modal-icon"></i>,
+    describtion: "Ensuring code efficiency and optimization.",
+  },
+  {
+    icon: <i className="uil uil-check-circle services__modal-icon"></i>,
+    describtion: "Implementing accessibility standards for inclusivity.",
+  },
+];
+const dataFullStackSolutions = [
+  {
+    icon: <i className="uil uil-check-circle services__modal-icon"></i>,
+    describtion:
+      "Developing dynamic websites with front-end and back-end integration.",
+  },
+  {
+    icon: <i className="uil uil-check-circle services__modal-icon"></i>,
+    describtion: "Creating RESTful APIs for data exchange.",
+  },
+  {
+    icon: <i className="uil uil-check-circle services__modal-icon"></i>,
+    describtion: "Database design and management.",
+  },
+  {
+    icon: <i className="uil uil-check-circle services__modal-icon"></i>,
+    describtion: "Deployment and maintenance support.",
   },
 ];
