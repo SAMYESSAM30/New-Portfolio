@@ -44,54 +44,54 @@ const Frontend = () => {
 export default Frontend;
 const Data1 = [
   {
-    icon: <i class="bx bx-badge-check"></i>,
+    icon: <i className="bx bx-badge-check"></i>,
     dataName: "HTML",
     level: "Basic",
   },
   {
-    icon: <i class="bx bx-badge-check"></i>,
+    icon: <i className="bx bx-badge-check"></i>,
     dataName: "CSS",
     level: "Advanced",
   },
   {
-    icon: <i class="bx bx-badge-check"></i>,
+    icon: <i className="bx bx-badge-check"></i>,
     dataName: "Bootstrap",
     level: "Intermediate",
   },
   {
-    icon: <i class="bx bx-badge-check"></i>,
+    icon: <i className="bx bx-badge-check"></i>,
     dataName: "tailwind CSS",
     level: "Intermediate",
   },
   {
-    icon: <i class="bx bx-badge-check"></i>,
+    icon: <i className="bx bx-badge-check"></i>,
     dataName: "MUI CSS",
     level: "Intermediate",
   },
 ];
 const Data2 = [
   {
-    icon: <i class="bx bx-badge-check"></i>,
+    icon: <i className="bx bx-badge-check"></i>,
     dataName: "JavaScript",
     level: "Intermediate",
   },
   {
-    icon: <i class="bx bx-badge-check"></i>,
+    icon: <i className="bx bx-badge-check"></i>,
     dataName: "React",
     level: "Intermediate",
   },
   {
-    icon: <i class="bx bx-badge-check"></i>,
+    icon: <i className="bx bx-badge-check"></i>,
     dataName: "React Native",
     level: "Intermediate",
   },
   {
-    icon: <i class="bx bx-badge-check"></i>,
+    icon: <i className="bx bx-badge-check"></i>,
     dataName: "Next Js",
     level: "Intermediate",
   },
   {
-    icon: <i class="bx bx-badge-check"></i>,
+    icon: <i className="bx bx-badge-check"></i>,
     dataName: "Redux",
     level: "Intermediate",
   },

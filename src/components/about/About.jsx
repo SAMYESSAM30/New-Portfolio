@@ -2,7 +2,7 @@ import React from "react";
 import AboutImg from "../../assets/about.jpg";
 import CV from "../../assets/Samy Essam - Frontend Developer.pdf";
 import Info from "./Info";
-import './about.css'
+import "./about.css";
 const About = () => {
   return (
     <section className="about section" id="about">
@@ -13,12 +13,14 @@ const About = () => {
         <div className="about__data">
           <Info />
           <p className="about__description">
-            Unveiling the journey of front-end development, from inception to mastery, navigating through trends, tools, and the art of user interaction.
+            Unveiling the journey of front-end development, from inception to
+            mastery, navigating through trends, tools, and the art of user
+            interaction.
           </p>
-          <a href={CV} download='' className="button button--flex">
+          <a href={CV} download="" className="button button--flex">
             Download CV
             <svg
-              class="button__icon"
+              className="button__icon"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"

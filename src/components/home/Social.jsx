@@ -8,21 +8,21 @@ const Social = () => {
         className="home__social-icon"
         target="_blank"
       >
-        <i class="uil uil-linkedin-alt"></i>
+        <i className="uil uil-linkedin-alt"></i>
       </a>
       <a
         href="https://www.facebook.com/profile.php?id=100008369070405&mibextid=LQQJ4d"
         className="home__social-icon"
         target="_blank"
       >
-        <i class="uil uil-facebook-f"></i>
+        <i className="uil uil-facebook-f"></i>
       </a>
       <a
         href="https://github.com/SAMYESSAM30"
         className="home__social-icon"
         target="_blank"
       >
-        <i class="uil uil-github-alt"></i>
+        <i className="uil uil-github-alt"></i>
       </a>
     </div>
   );

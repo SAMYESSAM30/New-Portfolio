@@ -42,45 +42,45 @@ export const Backend = () => {
 };
 const Data1 = [
   {
-    icon: <i class="bx bx-badge-check"></i>,
+    icon: <i className="bx bx-badge-check"></i>,
     dataName: "C#",
     level: "Basic",
   },
   {
-    icon: <i class="bx bx-badge-check"></i>,
+    icon: <i className="bx bx-badge-check"></i>,
     dataName: ".Net",
     level: "Basic",
   },
   {
-    icon: <i class="bx bx-badge-check"></i>,
+    icon: <i className="bx bx-badge-check"></i>,
     dataName: "Node Js",
     level: "Basic",
   },
   {
-    icon: <i class="bx bx-badge-check"></i>,
+    icon: <i className="bx bx-badge-check"></i>,
     dataName: "Express Js",
     level: "Basic",
   },
 ];
 const Data2 = [
   {
-    icon: <i class="bx bx-badge-check"></i>,
+    icon: <i className="bx bx-badge-check"></i>,
     dataName: "SQL",
     level: "Basic",
   },
   {
-    icon: <i class="bx bx-badge-check"></i>,
+    icon: <i className="bx bx-badge-check"></i>,
     dataName: "MySQL",
     level: "Intermediate",
   },
 
   {
-    icon: <i class="bx bx-badge-check"></i>,
+    icon: <i className="bx bx-badge-check"></i>,
     dataName: "Mango DB",
     level: "Basic",
   },
   {
-    icon: <i class="bx bx-badge-check"></i>,
+    icon: <i className="bx bx-badge-check"></i>,
     dataName: "Firebase",
     level: "Intermediate",
   },

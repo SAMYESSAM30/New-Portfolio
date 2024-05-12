@@ -71,15 +71,15 @@
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
-/* @media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .qualifcation__container {
     margin-left: auto;
     margin-right: auto;
   }
-} */
+}
 
 /* For medium devices */
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .qualifcation__container {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
@@ -98,4 +98,4 @@
   .qualifcation__data {
     gap: 0.5rem;
   }
-} */
+}
