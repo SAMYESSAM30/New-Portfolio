@@ -1,7 +1,12 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
+
 const ContectForm = () => {
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -10,13 +15,26 @@ const ContectForm = () => {
       "template_7bpw1cc",
       form.current,
       "qExeYcru3nOSuO9Go"
-    );
+    )
+    .then((result) => {
+      if (result.status === 200) {
+        toast.success("Message sent successfully!", {
+          position: "top-right" 
+        });
+      }
+    })
+    .catch((error) => {
+      toast.error("Failed to send message. Please try again.", {
+         position: "top-right" 
+      });
+    });
+
     e.target.reset();
   };
   return (
     <div>
       {" "}
-      <form ref={form} onSubmit={sendEmail} className="contact__form">
+     <form ref={form} onSubmit={sendEmail} className="contact__form"> 
         <div className="contact__form-div">
           <label htmlFor="" className="contact__form-tag">
             Name
@@ -73,6 +91,7 @@ const ContectForm = () => {
           </svg>
         </button>
       </form>
+         <ToastContainer />
     </div>
   );
 };
