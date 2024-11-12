@@ -1,5 +1,5 @@
 import React from "react";
-import AboutImg from "../../assets/about.jpg";
+import AboutImg from "../../assets/about.jpeg";
 import CV from "../../assets/Samy Essam - Frontend Developer.pdf";
 import Info from "./Info";
 import "./about.css";

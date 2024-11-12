@@ -13,9 +13,7 @@
   margin: 0 var(--mb-1);
   cursor: pointer;
 }
-.qualifcation__button:hover {
-  color: var(--title-color-dark);
-}
+
 .qualifcation__icon {
   font-size: 1.8rem;
   margin-right: var(--mb-0-25);
@@ -24,7 +22,10 @@
 .qualifcation__active {
   /* font-size: 1.8rem;
   margin-right: var(--mb-0-25); */
-  color: var(--title-color-dark);
+  background-color: var(--title-color);
+  color: var(--container-color);
+  padding: 5px 10px;
+  border-radius: 0.5rem;
 }
 .qualifcation__sections {
   display: grid;

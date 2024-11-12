@@ -35,6 +35,7 @@
   border-radius: 1rem;
   margin-bottom: var(--mb-1);
   transition: 1s;
+  filter: grayscale(100%);
 }
 .work__img:hover {
   transform: scale(1.05);

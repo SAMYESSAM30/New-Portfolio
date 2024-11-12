@@ -93,6 +93,14 @@
 .contact__form-area textarea {
   resize: none;
 }
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin: 10px;
+}
+.input-error {
+  border-color: red;
+}
 
 /* For large devices */
 @media screen and (max-width: 992px) {

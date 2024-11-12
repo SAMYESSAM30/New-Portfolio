@@ -19,7 +19,7 @@ export const Contact = () => {
             <div className="contact__card">
               <i className=" bx bx-mail-send contact__card-icon"></i>
               <h3 className="contact__card-title">Email</h3>
-              <sapn className="contact__card-data">user@gmail.com</sapn>
+              <sapn className="contact__card-data">samyessam2000@gmail.com</sapn>
 
               <a
                 href="mailto:samyessam2000@gmail.com"
@@ -32,12 +32,13 @@ export const Contact = () => {
             <div className="contact__card">
               <i className="bx bxl-whatsapp contact__card-icon"></i>
               <h3 className="contact__card-title">Whatsapp</h3>
-              <sapn className="contact__card-data">999-888-777</sapn>
+              <sapn className="contact__card-data">01141627898</sapn>
 
               <a
                 href="https://api.whatsapp.com/send?phone=01141627898&text=Hello, more information!"
                 className="contact__button"
                 target="_blank"
+                rel="noreferrer"
               >
                 Write me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -46,12 +47,13 @@ export const Contact = () => {
             <div className="contact__card">
               <i className="bx bxl-instagram contact__card-icon"></i>
               <h3 className="contact__card-title">Instegram</h3>
-              <sapn className="contact__card-data">user.fb123</sapn>
+              <sapn className="contact__card-data">Santa30</sapn>
 
               <a
                 href="https://www.instagram.com/santa__30__/"
                 target="_blank"
                 className="contact__button"
+                rel="noreferrer"
               >
                 Write me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>

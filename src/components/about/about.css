@@ -5,6 +5,7 @@
   width: 350px;
   border-radius: 1.5rem;
   justify-self: center;
+  filter: grayscale(100%);
 }
 .about__info {
   grid-template-columns: repeat(3, 140px);
