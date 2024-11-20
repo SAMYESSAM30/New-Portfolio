@@ -101,12 +101,12 @@ export const Qualifcation = () => {
                 <span className="qualifcation__line"></span>
               </div>{" "}
               <div>
-                <h3 className="qualifcation__title">Senior Frontend Developer </h3>
+                <h3 className="qualifcation__title">Frontend Developer </h3>
                 <span className="qualifcation__subtitle">
                   NHC (National Housing Company) - Remote
                 </span>
                 <div className="qualifcation__calender">
-                  <i className="uil uil-calendar-alt"> 2022 - 2023 </i>
+                  <i className="uil uil-calendar-alt">2023 - Current </i>
                 </div>
               </div>
             </div>
@@ -119,7 +119,7 @@ export const Qualifcation = () => {
                   E2E County - on side
                 </span>
                 <div className="qualifcation__calender">
-                  <i className="uil uil-calendar-alt">2023 - Current</i>
+                  <i className="uil uil-calendar-alt">2023 - 2023</i>
                 </div>
               </div>
               <div>

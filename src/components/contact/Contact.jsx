@@ -35,7 +35,7 @@ export const Contact = () => {
               <sapn className="contact__card-data">01141627898</sapn>
 
               <a
-                href="https://api.whatsapp.com/send?phone=01141627898&text=Hello, more information!"
+                href="https://api.whatsapp.com/send?phone=201141627898&text=Hello, more information!"
                 className="contact__button"
                 target="_blank"
                 rel="noreferrer"
