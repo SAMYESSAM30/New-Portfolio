@@ -4,16 +4,16 @@ import "../App.css";
 
 import Header from "../components/header/Header";
 
-import { Contact } from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
 import ScrollUp from "../components/scrollUp/ScrollUp";
+import BolgsCom from "../components/blogs/BolgsCom";
 
 function Blogs() {
   return (
     <>
       <Header />
       <main className="main">
-        <Contact />
+        <BolgsCom />
       </main>
       <Footer />
       <ScrollUp />

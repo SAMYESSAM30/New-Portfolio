@@ -1,18 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
+import { useTranslation } from "react-i18next";
+import "../../i18n"; // تأكد من استيراد ملف i18n.js
+
 const Header = () => {
-  window.addEventListener("scroll", function () {
-    const header = document.querySelector(".header");
-    if (this.scrollY >= 80) header.classList.add("scroll-header");
-    else header.classList.remove("scroll-header");
-  });
   const [Toggle, ShowMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector(".header");
+      if (window.scrollY >= 80) header.classList.add("scroll-header");
+      else header.classList.remove("scroll-header");
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener when the component unmounts
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
 
   return (
     <header className="header">
+      <header>
+        <button onClick={() => changeLanguage("en")}>English</button>
+        <button onClick={() => changeLanguage("ar")}>العربية</button>
+      </header>
       <nav className="nav container">
-        <a href="index.html" className="nav__logo">
+        <a href="/" className="nav__logo">
           Samy
         </a>
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
@@ -25,7 +45,7 @@ const Header = () => {
                   activeNav === "#home" ? "nav__link active-link" : "nav__link"
                 }
               >
-                <i className="uil uil-estate nav__icon"></i> Home
+                <i className="uil uil-estate nav__icon"></i> {t("home")}
               </a>
             </li>
           </ul>
@@ -38,10 +58,9 @@ const Header = () => {
                   activeNav === "#about" ? "nav__link active-link" : "nav__link"
                 }
               >
-                <i className="uil uil-user nav__icon"></i> About
+                <i className="uil uil-user nav__icon"></i> {t("about")}
               </a>
             </li>
-            {/*  */}
           </ul>
           <ul className="nav__list grid">
             <li className="nav__item">
@@ -54,8 +73,7 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-file-alt nav__icon"></i>
-                Skills
+                <i className="uil uil-file-alt nav__icon"></i> {t("skills")}
               </a>
             </li>
           </ul>
@@ -70,7 +88,8 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-briefcase-alt nav__icon"></i>Services
+                <i className="uil uil-briefcase-alt nav__icon"></i>{" "}
+                {t("services")}
               </a>
             </li>
           </ul>
@@ -85,8 +104,7 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-scenery nav__icon"></i>
-                Portfolio
+                <i className="uil uil-scenery nav__icon"></i> {t("portfolio")}
               </a>
             </li>
           </ul>
@@ -101,8 +119,7 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-message nav__icon"></i>
-                Contact
+                <i className="uil uil-message nav__icon"></i> {t("contact")}
               </a>
             </li>
           </ul>

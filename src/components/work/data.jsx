@@ -4,8 +4,16 @@ import B2E from "../../assets/B2E.png";
 import B2C from "../../assets/B2C.png";
 import Hakahana from "../../assets/Hakahana.png";
 import syntrumsolutions from "../../assets/syntrumsolutins.png";
-
+import Rega from "../../assets/rega.png";
+import Corsqool from "../../assets/corsqool.png";
 export const ProjectsData = [
+  {
+    id: 7,
+    image: Rega,
+    title: "General Authority for Real Estate",
+    category: "NextJs",
+    href: "https://rega.gov.sa/",
+  },
   {
     id: 1,
     image: ZeroDryTime,
@@ -45,13 +53,20 @@ export const ProjectsData = [
     id: 6,
     image: Hakahana,
     title: "Hakahana WebSite",
-    category: "Bootstrap",
+    category: "vanillaJs",
     href: "https://samyessam30.github.io/Hakahana/",
+  },
+  {
+    id: 8,
+    image: Corsqool,
+    title: "Corsqool",
+    category: "vanillaJs",
+    href: "https://jad361.pythonanywhere.com/",
   },
 ];
 export const projectsNav = [
   { name: "all" },
-  { name: "Bootstrap" },
+  { name: "vanillaJs" },
   { name: "ReactJs" },
   { name: "NextJs" },
 ];

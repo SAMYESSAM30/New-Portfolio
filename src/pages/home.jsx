@@ -14,10 +14,12 @@ import Work from "../components/work/Work";
 // import Testimonials from "../components/testimonials/Testimonials";
 import "../App.css";
 
-const home = () => {
+const HomePage = () => {
+
   return (
     <>
       <Header />
+    
       <main className="main">
         <Home />
         <About />
@@ -34,4 +36,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default HomePage;
