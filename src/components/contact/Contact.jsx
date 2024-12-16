@@ -1,38 +1,44 @@
 import React from "react";
 import ContectForm from "./ContectForm";
 import "./contact.css";
+import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="contact section" id="contact">
-      <h2 h2 className="section__title">
-        {" "}
-        Get in touch
-      </h2>
-      <span className="section__subtitle">Contact Me</span>
+      <h2 className="section__title">{t("contactTitle")}</h2>
+      <span className="section__subtitle">{t("contactSubtitle")}</span>
 
       <div className="contact__container grid">
         <div className="contact__content">
-          <h3 className="contact__title">Talk to me</h3>
+          <h3 className="contact__title">{t("contactContentTitle")}</h3>
 
           <div className="contact__info">
             <div className="contact__card">
-              <i className=" bx bx-mail-send contact__card-icon"></i>
-              <h3 className="contact__card-title">Email</h3>
-              <sapn className="contact__card-data">samyessam2000@gmail.com</sapn>
+              <i className="bx bx-mail-send contact__card-icon"></i>
+              <h3 className="contact__card-title">{t("contactEmailTitle")}</h3>
+              <span className="contact__card-data">
+                {t("contactEmailData")}
+              </span>
 
               <a
                 href="mailto:samyessam2000@gmail.com"
                 className="contact__button"
               >
-                Write me
+                {t("contactEmailButton")}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
             <div className="contact__card">
               <i className="bx bxl-whatsapp contact__card-icon"></i>
-              <h3 className="contact__card-title">Whatsapp</h3>
-              <sapn className="contact__card-data">01141627898</sapn>
+              <h3 className="contact__card-title">
+                {t("contactWhatsappTitle")}
+              </h3>
+              <span className="contact__card-data">
+                {t("contactWhatsappData")}
+              </span>
 
               <a
                 href="https://api.whatsapp.com/send?phone=201141627898&text=Hello, more information!"
@@ -40,14 +46,18 @@ export const Contact = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Write me
+                {t("contactWhatsappButton")}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
             <div className="contact__card">
               <i className="bx bxl-instagram contact__card-icon"></i>
-              <h3 className="contact__card-title">Instegram</h3>
-              <sapn className="contact__card-data">Santa30</sapn>
+              <h3 className="contact__card-title">
+                {t("contactInstagramTitle")}
+              </h3>
+              <span className="contact__card-data">
+                {t("contactInstagramData")}
+              </span>
 
               <a
                 href="https://www.instagram.com/santa__30__/"
@@ -55,14 +65,14 @@ export const Contact = () => {
                 className="contact__button"
                 rel="noreferrer"
               >
-                Write me
+                {t("contactInstagramButton")}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
           </div>
         </div>
         <div className="contact__content">
-          <h3 className="contact__title">Write me your project</h3>
+          <h3 className="contact__title">{t("contactProjectTitle")}</h3>
           <ContectForm />
         </div>
       </div>

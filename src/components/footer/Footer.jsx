@@ -34,7 +34,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <i className="uil uil-linkedin-alt"></i> {t("linkedin")}
+            <i className="uil uil-linkedin-alt"></i>
           </a>
           <a
             href="https://www.facebook.com/profile.php?id=100008369070405&mibextid=LQQJ4d"
@@ -42,7 +42,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <i className="uil uil-facebook-f"></i> {t("facebook")}
+            <i className="uil uil-facebook-f"></i>
           </a>
           <a
             href="https://github.com/SAMYESSAM30"
@@ -50,7 +50,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <i className="uil uil-github-alt"></i> {t("github")}
+            <i className="uil uil-github-alt"></i>
           </a>
         </div>
 

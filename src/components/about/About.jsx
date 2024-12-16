@@ -1,24 +1,29 @@
 import React from "react";
+import { useTranslation } from "react-i18next"; // Import the useTranslation hook
 import AboutImg from "../../assets/about.jpeg";
 import CV from "../../assets/Samy Essam - Frontend Developer.pdf";
 import Info from "./Info";
 import "./about.css";
+
 const About = () => {
+  const { t } = useTranslation(); // Initialize the translation function
+
   return (
     <section className="about section" id="about">
-      <h2 className="section__title">About Me</h2>
-      <span className="section__subtitle">My Introduction</span>
+      <h2 className="section__title">{t("aboutTitle")}</h2>{" "}
+      {/* Use translation for title */}
+      <span className="section__subtitle">{t("aboutSubtitle")}</span>{" "}
+      {/* Use translation for subtitle */}
       <div className="about__container container grid">
         <img src={AboutImg} alt="About Img" className="about__img" />
         <div className="about__data">
           <Info />
           <p className="about__description">
-            Unveiling the journey of front-end development, from inception to
-            mastery, navigating through trends, tools, and the art of user
-            interaction.
+            {t("aboutDescription")}{" "}
+            {/* Optional: Use a translated description here */}
           </p>
           <a href={CV} download="" className="button button--flex">
-            Download CV
+            {t("downloadCV")} {/* Use translation for button text */}
             <svg
               className="button__icon"
               xmlns="http://www.w3.org/2000/svg"

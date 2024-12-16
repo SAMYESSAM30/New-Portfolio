@@ -1,6 +1,28 @@
 import React from "react";
+import { useTranslation } from "react-i18next"; // Import the useTranslation hook
 
 const Info = () => {
+  const { t } = useTranslation(); // Initialize the translation function
+
+  const data = [
+    {
+      num: 1,
+      title: t("experience"), // Use translation here
+      subtitle: t("yearsWorking"), // Use translation here
+      icon: <i className="bx bx-award about__icon"></i>,
+    },
+    {
+      title: t("completed"), // Use translation here
+      subtitle: t("projectsInAbout"), // Use translation here
+      icon: <i className="bx bx-briefcase-alt about__icon"></i>,
+    },
+    {
+      title: t("support"), // Use translation here
+      subtitle: t("online247"), // Use translation here
+      icon: <i className="bx bx-support about__icon"></i>,
+    },
+  ];
+
   return (
     <div>
       <div className="about__info grid">
@@ -17,21 +39,3 @@ const Info = () => {
 };
 
 export default Info;
-let data = [
-  {
-    num: 1,
-    title: "Experiennce",
-    subtitle: "3 Years Working",
-    icon: <i className="bx bx-award about__icon"></i>,
-  },
-  {
-    title: "Completed",
-    subtitle: "10 + Projects",
-    icon: <i className="bx bx-briefcase-alt about__icon"></i>,
-  },
-  {
-    title: "Support",
-    subtitle: "Online 24/7",
-    icon: <i className="bx bx-support about__icon"></i>,
-  },
-];
