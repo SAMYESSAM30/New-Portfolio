@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -16,7 +17,8 @@
   --container-color: #fff;
 
   /*========== Font and typography ==========*/
-  --body-font: "Poppins", sans-serif;
+  --body-font-en: "Poppins", sans-serif;
+  --body-font-ar: "Cairo", sans-serif;
 
   /*.5rem = 8px | 1rem = 16px ...*/
   --big-font-size: 3.3rem;
@@ -78,10 +80,14 @@ body,
 button,
 input,
 textarea {
-  font-family: var(--body-font);
+  font-family: var(--body-font-en);
   font-size: var(--normal-font-size);
 }
-
+body[lang="ar"] {
+  font-family: var(--body-font-ar); /* الخط العربي */
+  direction: rtl; /* الاتجاه من اليمين لليسار */
+  text-align: right;
+}
 body {
   background-color: var(--body-color);
   color: var(--text-color);

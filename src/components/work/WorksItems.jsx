@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const WorksItems = ({ item }) => {
+  const { t } = useTranslation();
   return (
     <div className="work__card" key={item.id}>
       <img src={item.image} alt="" className="work__img" />
@@ -11,7 +13,7 @@ const WorksItems = ({ item }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Demo <i className="bx bx-right-arrow-alt work__button-icon"></i>
+        {t("demo")} <i className="bx bx-right-arrow-alt work__button-icon"></i>
       </a>
     </div>
   );

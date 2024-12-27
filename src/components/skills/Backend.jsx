@@ -1,9 +1,57 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export const Backend = () => {
+  const { t } = useTranslation();
+
+  const Data1 = [
+    {
+      icon: <i className="bx bx-badge-check"></i>,
+      dataName: t("c"),
+      level: t("basic"),
+    },
+    {
+      icon: <i className="bx bx-badge-check"></i>,
+      dataName: t("net"),
+      level: t("basic"),
+    },
+    {
+      icon: <i className="bx bx-badge-check"></i>,
+      dataName: t("node-js"),
+      level: t("basic"),
+    },
+    {
+      icon: <i className="bx bx-badge-check"></i>,
+      dataName: t("express-js"),
+      level: t("basic"),
+    },
+  ];
+  const Data2 = [
+    {
+      icon: <i className="bx bx-badge-check"></i>,
+      dataName: t("sql"),
+      level: t("basic"),
+    },
+    {
+      icon: <i className="bx bx-badge-check"></i>,
+      dataName: t("mysql"),
+      level: t("intermediate"),
+    },
+
+    {
+      icon: <i className="bx bx-badge-check"></i>,
+      dataName: t("mango-db"),
+      level: t("basic"),
+    },
+    {
+      icon: <i className="bx bx-badge-check"></i>,
+      dataName: t("firebase"),
+      level: t("intermediate"),
+    },
+  ];
   return (
     <div className="skills__content">
-      <h3 className="skills__title">Backend developer</h3>
+      <h3 className="skills__title">{t("backend-developer")}</h3>
       <div className="skills__box">
         <div className="skills__group">
           {Data1.map((item, index) => {
@@ -40,48 +88,3 @@ export const Backend = () => {
     </div>
   );
 };
-const Data1 = [
-  {
-    icon: <i className="bx bx-badge-check"></i>,
-    dataName: "C#",
-    level: "Basic",
-  },
-  {
-    icon: <i className="bx bx-badge-check"></i>,
-    dataName: ".Net",
-    level: "Basic",
-  },
-  {
-    icon: <i className="bx bx-badge-check"></i>,
-    dataName: "Node Js",
-    level: "Basic",
-  },
-  {
-    icon: <i className="bx bx-badge-check"></i>,
-    dataName: "Express Js",
-    level: "Basic",
-  },
-];
-const Data2 = [
-  {
-    icon: <i className="bx bx-badge-check"></i>,
-    dataName: "SQL",
-    level: "Basic",
-  },
-  {
-    icon: <i className="bx bx-badge-check"></i>,
-    dataName: "MySQL",
-    level: "Intermediate",
-  },
-
-  {
-    icon: <i className="bx bx-badge-check"></i>,
-    dataName: "Mango DB",
-    level: "Basic",
-  },
-  {
-    icon: <i className="bx bx-badge-check"></i>,
-    dataName: "Firebase",
-    level: "Intermediate",
-  },
-];

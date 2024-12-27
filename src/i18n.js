@@ -19,4 +19,10 @@ i18n
     interpolation: { escapeValue: false }, // لأسباب أمنية
   });
 
+// إضافة مستمع لتغيير اللغة
+i18n.on("languageChanged", (lng) => {
+  // تغيير سمة lang في body
+  document.body.setAttribute("lang", lng);
+});
+
 export default i18n;

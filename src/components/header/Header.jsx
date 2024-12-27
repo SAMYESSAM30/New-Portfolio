@@ -27,10 +27,6 @@ const Header = () => {
 
   return (
     <header className="header">
-      <header>
-        <button onClick={() => changeLanguage("en")}>English</button>
-        <button onClick={() => changeLanguage("ar")}>العربية</button>
-      </header>
       <nav className="nav container">
         <a href="/" className="nav__logo">
           Samy
@@ -122,6 +118,30 @@ const Header = () => {
                 <i className="uil uil-message nav__icon"></i> {t("contact")}
               </a>
             </li>
+          </ul>
+          <ul className="nav__list grid">
+            <div className="lang">
+              {" "}
+              <li className="nav__item">
+                <a
+                  href="#home"
+                  onClick={() => changeLanguage("en")}
+                  className="nav__link"
+                >
+                  <i className="uil uil-language nav__icon"></i> {t("english")}
+                </a>
+              </li>
+              <li className="nav__item">|</li>
+              <li className="nav__item">
+                <a
+                  href="#home"
+                  onClick={() => changeLanguage("ar")}
+                  className="nav__link"
+                >
+                  <i className="uil uil-language nav__icon"></i> {t("arabic")}
+                </a>
+              </li>
+            </div>
           </ul>
           <i
             className="uil uil-times nav__close"
