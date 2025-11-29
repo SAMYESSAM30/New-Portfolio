@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/home";
 import Blogs from "./pages/blogs";
+import BlogDetailsPage from "./pages/blogDetails";
 
 function App() {
   const { i18n } = useTranslation();
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blogs/:id" element={<BlogDetailsPage />} />
         </Routes>
       </Router>
     </ThemeProvider>

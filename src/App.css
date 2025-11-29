@@ -290,3 +290,17 @@ html[dir="rtl"] .container {
   margin-left: auto;
   margin-right: auto;
 }
+
+@media screen and (max-width: 992px) {
+  html[dir="rtl"] .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+}
+
+@media screen and (max-width: 350px) {
+  html[dir="rtl"] .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+}

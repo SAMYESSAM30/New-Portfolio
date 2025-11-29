@@ -1,18 +1,18 @@
-// Blogs.js
 import React from "react";
-import "../App.css";
-
+import { useParams, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import Header from "../components/header/Header";
-import BlogsComponent from "../components/blogs/Blogs";
+import BlogDetails from "../components/blogs/BlogDetails";
 import Footer from "../components/footer/Footer";
 import ScrollUp from "../components/scrollUp/ScrollUp";
+import "../App.css";
 
-function Blogs() {
+function BlogDetailsPage() {
   return (
     <>
       <Header />
       <main className="main">
-        <BlogsComponent />
+        <BlogDetails />
       </main>
       <Footer />
       <ScrollUp />
@@ -20,4 +20,5 @@ function Blogs() {
   );
 }
 
-export default Blogs;
+export default BlogDetailsPage;
+
