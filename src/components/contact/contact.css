@@ -55,6 +55,10 @@
 .contact__button:hover .contact__button-icon {
   transform: translate(0.25rem);
 }
+
+html[dir="rtl"] .contact__button:hover .contact__button-icon {
+  transform: translate(-0.25rem);
+}
 .contact__form {
   width: 360px;
 }
@@ -77,6 +81,13 @@
   padding: 1.5rem;
   z-index: 1;
 }
+
+html[dir="rtl"] .contact__form-input {
+  left: auto;
+  right: 0;
+  text-align: right;
+}
+
 .contact__form-tag {
   position: absolute;
   top: -0.75rem;
@@ -85,6 +96,11 @@
   padding: 0.25rem;
   background-color: var(--body-color);
   z-index: 10;
+}
+
+html[dir="rtl"] .contact__form-tag {
+  left: auto;
+  right: 1.25rem;
 }
 .contact__form-area {
   height: 11rem;
@@ -141,5 +157,10 @@
   .contact__container {
     margin-left: 10px;
     margin-right: 0;
+  }
+  
+  html[dir="rtl"] .contact__container {
+    margin-left: 0;
+    margin-right: 10px;
   }
 }

@@ -61,6 +61,7 @@
   height: 13px;
   background-color: var(--text-color);
   border-radius: 50%;
+  position: relative;
 }
 .qualifcation__line {
   display: block;
@@ -68,6 +69,15 @@
   height: 100%;
   background-color: var(--text-color);
   transform: translate(6px, -7px);
+}
+
+/* RTL Support */
+html[dir="rtl"] .qualifcation__rounder {
+  left: 0;
+  right: auto;
+}
+html[dir="rtl"] .qualifcation__line {
+  transform: translate(-6px, -7px);
 }
 
 /*=============== BREAKPOINTS ===============*/

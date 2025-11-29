@@ -1,24 +1,24 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import AboutImg from "../../assets/about.jpeg";
 import CV from "../../assets/Samy Essam - Frontend Developer.pdf";
 import Info from "./Info";
 import "./about.css";
 const About = () => {
+  const { t } = useTranslation();
   return (
     <section className="about section" id="about">
-      <h2 className="section__title">About Me</h2>
-      <span className="section__subtitle">My Introduction</span>
+      <h2 className="section__title">{t("about.title")}</h2>
+      <span className="section__subtitle">{t("about.subtitle")}</span>
       <div className="about__container container grid">
         <img src={AboutImg} alt="About Img" className="about__img" />
         <div className="about__data">
           <Info />
           <p className="about__description">
-            Unveiling the journey of front-end development, from inception to
-            mastery, navigating through trends, tools, and the art of user
-            interaction.
+            {t("about.description")}
           </p>
           <a href={CV} download="" className="button button--flex">
-            Download CV
+            {t("about.downloadCV")}
             <svg
               className="button__icon"
               xmlns="http://www.w3.org/2000/svg"

@@ -10,6 +10,11 @@
   transition: 0.4s;
 }
 
+html[dir="rtl"] .scrollup {
+  right: auto;
+  left: 2.5rem;
+}
+
 .scrollup__icon {
   font-size: 1.5rem;
   color: var(--container-color);
@@ -45,6 +50,12 @@
     right: 1.5rem;
     padding: 0.25rem 0.4rem;
   }
+  
+  html[dir="rtl"] .scrollup {
+    right: auto;
+    left: 1.5rem;
+  }
+  
   .scrollup__icon {
     font-size: 1.25rem;
   }

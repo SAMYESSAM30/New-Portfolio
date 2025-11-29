@@ -28,6 +28,11 @@
   height: 38px;
   margin-left: 0.4rem;
 }
+
+html[dir="rtl"] .home__hand {
+  margin-left: 0;
+  margin-right: 0.4rem;
+}
 .home__subtitle {
   position: relative;
   font-size: var(--h3-font-size);
@@ -43,6 +48,16 @@
   background-color: var(--title-color);
   left: 0;
   top: 1rem;
+}
+
+html[dir="rtl"] .home__subtitle {
+  padding-left: 0;
+  padding-right: 5.4rem;
+}
+
+html[dir="rtl"] .home__subtitle::before {
+  left: auto;
+  right: 0;
 }
 
 .home__description {
@@ -77,6 +92,11 @@
 .home__scroll {
   margin-left: 9.25rem;
 }
+
+html[dir="rtl"] .home__scroll {
+  margin-left: 0;
+  margin-right: 9.25rem;
+}
 .wheel {
   animation: scroll 2s ease infinite;
 }
@@ -94,6 +114,11 @@
   font-weight: var(--font-medium);
   margin-right: var(--mb-0-25);
   margin-left: 2px;
+}
+
+html[dir="rtl"] .home__scroll-name {
+  margin-right: 2px;
+  margin-left: var(--mb-0-25);
 }
 .home__csroll-arrow {
   font-size: 1.25rem;
@@ -115,6 +140,12 @@
     padding-left: 3.75rem;
     margin-bottom: var(--mb-1);
   }
+  
+  html[dir="rtl"] .home__subtitle {
+    padding-left: 0;
+    padding-right: 3.75rem;
+  }
+  
   .home__subtitle::before {
     width: 42px;
     top: 0.8rem;
@@ -130,6 +161,11 @@
   }
   .home__scroll {
     margin-left: 7.5rem;
+  }
+  
+  html[dir="rtl"] .home__scroll {
+    margin-left: 0;
+    margin-right: 7.5rem;
   }
 }
 
