@@ -86,7 +86,7 @@ export const Qualifcation = () => {
                   {t("qualification.internshipLocation")}
                 </span>
                 <div className="qualifcation__calender">
-                  <i className="uil uil-calendar-alt">2022 - 2022</i>
+                  <i className="uil uil-calendar-alt">{t("qualification.internshipDate")}</i>
                 </div>
               </div>
               <div>
@@ -109,7 +109,7 @@ export const Qualifcation = () => {
                   {t("qualification.bachelorLocation")}
                 </span>
                 <div className="qualifcation__calender">
-                  <i className="uil uil-calendar-alt"> 2018 - 2020 </i>
+                  <i className="uil uil-calendar-alt">{t("qualification.bachelorDate")}</i>
                 </div>
               </div>
             </div>
@@ -124,66 +124,98 @@ export const Qualifcation = () => {
                 : "qualifcation__content"
             }
           >
-             <div className="qualifcation__data">
+            {/* NHC Innovation - Current */}
+            <div className="qualifcation__data">
               <div></div>
               <div>
                 <span className="qualifcation__rounder"></span>
                 <span className="qualifcation__line"></span>
-              </div>{" "}
+              </div>
               <div>
-                <h3 className="qualifcation__title">{t("qualification.frontendDeveloperNHC")} </h3>
+                <h3 className="qualifcation__title">{t("qualification.seniorFrontendDeveloperNHC")}</h3>
                 <span className="qualifcation__subtitle">
-                  {t("qualification.frontendDeveloperNHCLocation")}
+                  {t("qualification.seniorFrontendDeveloperNHCLocation")}
                 </span>
                 <div className="qualifcation__calender">
-                  <i className="uil uil-calendar-alt">2023 - {t("qualification.current")} </i>
+                  <i className="uil uil-calendar-alt">{t("qualification.seniorFrontendDeveloperNHCDate")}</i>
                 </div>
               </div>
             </div>
-            {/* Data1 */}
+            {/* Zeem */}
             <div className="qualifcation__data">
-              {" "}
+              <div>
+                <h3 className="qualifcation__title">{t("qualification.seniorFrontendDeveloperZeem")}</h3>
+                <span className="qualifcation__subtitle">
+                  {t("qualification.seniorFrontendDeveloperZeemLocation")}
+                </span>
+                <div className="qualifcation__calender">
+                  <i className="uil uil-calendar-alt">{t("qualification.seniorFrontendDeveloperZeemDate")}</i>
+                </div>
+              </div>
+              <div>
+                <span className="qualifcation__rounder"></span>
+                <span className="qualifcation__line"></span>
+              </div>
+            </div>
+            {/* Upwork */}
+            <div className="qualifcation__data">
+              <div></div>
+              <div>
+                <span className="qualifcation__rounder"></span>
+                <span className="qualifcation__line"></span>
+              </div>
+              <div>
+                <h3 className="qualifcation__title">{t("qualification.frontendDeveloperUpwork")}</h3>
+                <span className="qualifcation__subtitle">
+                  {t("qualification.frontendDeveloperUpworkLocation")}
+                </span>
+                <div className="qualifcation__calender">
+                  <i className="uil uil-calendar-alt">{t("qualification.frontendDeveloperUpworkDate")}</i>
+                </div>
+              </div>
+            </div>
+            {/* Custom Mind */}
+            <div className="qualifcation__data">
+              <div>
+                <h3 className="qualifcation__title">{t("qualification.frontendDeveloperCustomMind")}</h3>
+                <span className="qualifcation__subtitle">
+                  {t("qualification.frontendDeveloperCustomMindLocation")}
+                </span>
+                <div className="qualifcation__calender">
+                  <i className="uil uil-calendar-alt">{t("qualification.frontendDeveloperCustomMindDate")}</i>
+                </div>
+              </div>
+              <div>
+                <span className="qualifcation__rounder"></span>
+                <span className="qualifcation__line"></span>
+              </div>
+            </div>
+            {/* E2E County */}
+            <div className="qualifcation__data">
+              <div></div>
+              <div>
+                <span className="qualifcation__rounder"></span>
+                <span className="qualifcation__line"></span>
+              </div>
               <div>
                 <h3 className="qualifcation__title">{t("qualification.frontendDeveloperE2E")}</h3>
                 <span className="qualifcation__subtitle">
                   {t("qualification.frontendDeveloperE2ELocation")}
                 </span>
                 <div className="qualifcation__calender">
-                  <i className="uil uil-calendar-alt">2023 - 2023</i>
+                  <i className="uil uil-calendar-alt">{t("qualification.frontendDeveloperE2EDate")}</i>
                 </div>
               </div>
-              <div>
-                <span className="qualifcation__rounder"></span>
-                <span className="qualifcation__line"></span>
-              </div>
             </div>
-            {/* Data2 */}
+            {/* Syntrum Solutions */}
             <div className="qualifcation__data">
-              <div></div>
               <div>
-                <span className="qualifcation__rounder"></span>
-                <span className="qualifcation__line"></span>
-              </div>{" "}
-              <div>
-                <h3 className="qualifcation__title">{t("qualification.frontendDeveloperSyntrum")} </h3>
+                <h3 className="qualifcation__title">{t("qualification.frontendDeveloperSyntrum")}</h3>
                 <span className="qualifcation__subtitle">
                   {t("qualification.frontendDeveloperSyntrumLocation")}
                 </span>
                 <div className="qualifcation__calender">
-                  <i className="uil uil-calendar-alt"> 2022 - 2023 </i>
-                </div>
-              </div>
-            </div>
-            {/* Data3 */}
-            <div className="qualifcation__data">
-              {" "}
-              <div>
-                <h3 className="qualifcation__title">{t("qualification.frontendDeveloperFreelance")}</h3>
-                <span className="qualifcation__subtitle">
-                  {t("qualification.frontendDeveloperFreelanceLocation")}
-                </span>
-                <div className="qualifcation__calender">
-                  <i className="uil uil-calendar-alt">2021 - {t("qualification.current")}</i>
+                  <i className="uil uil-calendar-alt">{t("qualification.frontendDeveloperSyntrumDate")}</i>
                 </div>
               </div>
               <div>
@@ -191,20 +223,20 @@ export const Qualifcation = () => {
                 <span className="qualifcation__line"></span>
               </div>
             </div>
-            {/* Data4 */}
+            {/* .Net Developer */}
             <div className="qualifcation__data">
               <div></div>
               <div>
                 <span className="qualifcation__rounder"></span>
                 <span className="qualifcation__line"></span>
-              </div>{" "}
+              </div>
               <div>
                 <h3 className="qualifcation__title">{t("qualification.netDeveloper")}</h3>
                 <span className="qualifcation__subtitle">
                   {t("qualification.netDeveloperLocation")}
                 </span>
                 <div className="qualifcation__calender">
-                  <i className="uil uil-calendar-alt"> 2020 - 2021 </i>
+                  <i className="uil uil-calendar-alt">{t("qualification.netDeveloperDate")}</i>
                 </div>
               </div>
             </div>
