@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/home";
 import Blogs from "./pages/blogs";
 
@@ -14,12 +15,14 @@ function App() {
   }, [i18n.language]);
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/blogs" element={<Blogs />} />
-      </Routes>
-    </Router>
+    <ThemeProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blogs" element={<Blogs />} />
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
 

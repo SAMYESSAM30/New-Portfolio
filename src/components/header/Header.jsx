@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useTheme } from "../../contexts/ThemeContext";
 import "./Header.css";
 const Header = () => {
   const { t, i18n } = useTranslation();
+  const { isDark, toggleTheme } = useTheme();
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
     if (this.scrollY >= 80) header.classList.add("scroll-header");
@@ -116,23 +118,32 @@ const Header = () => {
         <div className="nav__toggle" onClick={() => ShowMenu(!Toggle)}>
           <i className="uil uil-apps"></i>
         </div>
-        <div className="nav__language">
-          {i18n.language !== "en" && (
-            <button
-              onClick={() => i18n.changeLanguage("en")}
-              className="language-btn"
-            >
-              EN
-            </button>
-          )}
-          {i18n.language !== "ar" && (
-            <button
-              onClick={() => i18n.changeLanguage("ar")}
-              className="language-btn"
-            >
-              AR
-            </button>
-          )}
+        <div className="nav__controls">
+          <button
+            onClick={toggleTheme}
+            className="theme-toggle"
+            aria-label={isDark ? "Switch to light theme" : "Switch to dark theme"}
+          >
+            <i className={isDark ? "uil uil-sun" : "uil uil-moon"}></i>
+          </button>
+          <div className="nav__language">
+            {i18n.language !== "en" && (
+              <button
+                onClick={() => i18n.changeLanguage("en")}
+                className="language-btn"
+              >
+                EN
+              </button>
+            )}
+            {i18n.language !== "ar" && (
+              <button
+                onClick={() => i18n.changeLanguage("ar")}
+                className="language-btn"
+              >
+                AR
+              </button>
+            )}
+          </div>
         </div>
       </nav>
     </header>

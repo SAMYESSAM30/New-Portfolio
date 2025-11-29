@@ -11,6 +11,10 @@
   border-radius: 1.25rem;
 }
 
+body.dark-theme .services__content {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 html[dir="rtl"] .services__content {
   padding: 6rem 2.5rem 2rem 0;
 }
@@ -59,6 +63,10 @@ html[dir="rtl"] .services__button:hover .services__button-icon {
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
+}
+
+body.dark-theme .services__modal {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .services__model-content {
   width: 500px;
