@@ -13,6 +13,8 @@ export const ProjectsData = [
     title: "portfolio.projects.generalAuthority",
     category: "NextJs",
     href: "https://eservicesredp.rega.gov.sa",
+    description: "portfolio.projects.descriptions.generalAuthority",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React Query"],
   },
   {
     id: 1,
@@ -20,6 +22,8 @@ export const ProjectsData = [
     title: "portfolio.projects.zeroDryTime",
     category: "ReactJs",
     href: "https://zerodrytime.com/",
+    description: "portfolio.projects.descriptions.zeroDryTime",
+    technologies: ["React", "JavaScript", "CSS3", "Responsive Design"],
   },
   {
     id: 2,
@@ -27,6 +31,8 @@ export const ProjectsData = [
     title: "portfolio.projects.syntrumSolutions",
     category: "ReactJs",
     href: "https://syntrum-solutions-adc02a.netlify.app/",
+    description: "portfolio.projects.descriptions.syntrumSolutions",
+    technologies: ["React", "JavaScript", "CSS3", "Netlify"],
   },
   {
     id: 3,
@@ -34,6 +40,8 @@ export const ProjectsData = [
     title: "portfolio.projects.e2eCounty",
     category: "NextJs",
     href: "https://www.e2ecounty.com/",
+    description: "portfolio.projects.descriptions.e2eCounty",
+    technologies: ["Next.js", "React", "TypeScript", "SSR"],
   },
   {
     id: 4,
@@ -41,6 +49,8 @@ export const ProjectsData = [
     title: "portfolio.projects.travwareB2E",
     category: "NextJs",
     href: "https://b2e.travware.com/",
+    description: "portfolio.projects.descriptions.travwareB2E",
+    technologies: ["Next.js", "React", "TypeScript", "API Integration"],
   },
   {
     id: 5,
@@ -48,6 +58,8 @@ export const ProjectsData = [
     title: "portfolio.projects.travwareB2C",
     category: "NextJs",
     href: "https://b2c.travware.com/",
+    description: "portfolio.projects.descriptions.travwareB2C",
+    technologies: ["Next.js", "React", "TypeScript", "E-commerce"],
   },
   {
     id: 6,
@@ -55,6 +67,8 @@ export const ProjectsData = [
     title: "portfolio.projects.hakahanaWebsite",
     category: "vanillaJs",
     href: "https://samyessam30.github.io/Hakahana/",
+    description: "portfolio.projects.descriptions.hakahanaWebsite",
+    technologies: ["JavaScript", "HTML5", "CSS3", "GitHub Pages"],
   },
   {
     id: 8,
@@ -62,6 +76,8 @@ export const ProjectsData = [
     title: "portfolio.projects.corsqool",
     category: "vanillaJs",
     href: "https://jad361.pythonanywhere.com/",
+    description: "portfolio.projects.descriptions.corsqool",
+    technologies: ["JavaScript", "HTML5", "CSS3", "Python Backend"],
   },
 ];
 export const projectsNav = [

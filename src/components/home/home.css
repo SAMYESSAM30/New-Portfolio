@@ -50,6 +50,22 @@ html[dir="rtl"] .home__hand {
   top: 1rem;
 }
 
+.typing-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+  color: var(--title-color);
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
 html[dir="rtl"] .home__subtitle {
   padding-left: 0;
   padding-right: 5.4rem;
