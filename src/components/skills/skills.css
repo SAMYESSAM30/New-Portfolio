@@ -9,6 +9,10 @@
   padding: 1.5rem 3cqb;
   border-radius: 1.25rem;
 }
+
+body.dark-theme .skills__content {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
 .skills__title {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);

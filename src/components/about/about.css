@@ -19,6 +19,10 @@
   text-align: center;
   padding: 1rem 1.25rem;
 }
+
+body.dark-theme .about__box {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
 .about__icon {
   font-size: 1.5rem;
   color: var(--title-color);
