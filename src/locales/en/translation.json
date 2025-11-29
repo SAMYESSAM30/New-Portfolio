@@ -1,0 +1,144 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Samy Essam",
+    "subtitle": "Frontend Developer",
+    "description": "Designing innovative solutions with user-centric focus.",
+    "sayHello": "Say Hello"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "My Introduction",
+    "description": "Unveiling the journey of front-end development, from inception to mastery, navigating through trends, tools, and the art of user interaction.",
+    "downloadCV": "Download CV",
+    "experience": "Experiennce",
+    "experienceValue": "3 + Years Working",
+    "completed": "Completed",
+    "completedValue": "10 + Projects",
+    "support": "Support",
+    "supportValue": "Online 24/7"
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "My technical level",
+    "frontendDeveloper": "Frontend developer",
+    "backendDeveloper": "Backend developer"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What i offer",
+    "customWebDesign": {
+      "title": "Custom Web Design",
+      "viewMore": "View More",
+      "description": "Service with more than 3 years of experience. Providing quality work to clients and companies.",
+      "items": {
+        "item1": "Tailored designs to reflect your brand identity.",
+        "item2": "Responsive layouts for seamless user experience.",
+        "item3": "Integration of modern UI/UX principles.",
+        "item4": "Cross-browser and cross-device compatibility."
+      }
+    },
+    "frontendDevelopment": {
+      "title": "Front-end Development",
+      "viewMore": "View More",
+      "description": "Service with more than 3 years of experience. Providing quality work to clients and companies.",
+      "items": {
+        "item1": "Building interactive and engaging user interfaces.",
+        "item2": "Utilizing HTML, CSS, and JavaScript frameworks.",
+        "item3": "Ensuring code efficiency and optimization.",
+        "item4": "Implementing accessibility standards for inclusivity."
+      }
+    },
+    "fullStackSolutions": {
+      "title": "Full-stack Solutions",
+      "viewMore": "View More",
+      "description": "Service with more than 3 years of experience. Providing quality work to clients and companies.",
+      "items": {
+        "item1": "Developing dynamic websites with front-end and back-end integration.",
+        "item2": "Creating RESTful APIs for data exchange.",
+        "item3": "Database design and management.",
+        "item4": "Deployment and maintenance support."
+      }
+    }
+  },
+  "qualification": {
+    "title": "Qualifcation",
+    "subtitle": "My Personel journey",
+    "education": "Education",
+    "experience": "Experience",
+    "internship": "Internship in Frontend developer",
+    "internshipLocation": "Egy - Syntrum Solutions",
+    "bachelor": "bachelor's degree in MIS",
+    "bachelorLocation": "Egy - Thebes Academy",
+    "frontendDeveloperNHC": "Frontend Developer",
+    "frontendDeveloperNHCLocation": "NHC (National Housing Company) - Remote",
+    "frontendDeveloperE2E": "Frontend Developer",
+    "frontendDeveloperE2ELocation": "E2E County - on side",
+    "frontendDeveloperSyntrum": "Frontend Developer",
+    "frontendDeveloperSyntrumLocation": "Syntrum Solutions - hybrid",
+    "frontendDeveloperFreelance": "Frontend Developer",
+    "frontendDeveloperFreelanceLocation": "Freelance - Remote",
+    "netDeveloper": ".Net Developer",
+    "netDeveloperLocation": "Freelance - Remote",
+    "current": "Current"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Most recent work",
+    "all": "all",
+    "vanillaJs": "vanillaJs",
+    "reactJs": "ReactJs",
+    "nextJs": "NextJs",
+    "demo": "Demo",
+    "projects": {
+      "generalAuthority": "General Authority for Real Estate",
+      "zeroDryTime": "Zero Dry Time",
+      "syntrumSolutions": "Syntrum Solutions",
+      "e2eCounty": "E2E County",
+      "travwareB2E": "TravWare B2E",
+      "travwareB2C": "TravWare B2C",
+      "hakahanaWebsite": "Hakahana WebSite",
+      "corsqool": "Corsqool"
+    }
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Contact Me",
+    "talkToMe": "Talk to me",
+    "writeMeYourProject": "Write me your project",
+    "email": "Email",
+    "whatsapp": "Whatsapp",
+    "instagram": "Instegram",
+    "writeMe": "Write me",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Insert your name",
+      "nameRequired": "Name is required",
+      "mail": "Mail",
+      "mailPlaceholder": "Insert your email",
+      "emailInvalid": "Invalid email address",
+      "emailRequired": "Email is required",
+      "project": "Project",
+      "projectPlaceholder": "Write your project",
+      "projectMinLength": "Project details must be at least 10 characters",
+      "projectRequired": "Project is required",
+      "sendMessage": "Send Message",
+      "messageSent": "Message sent successfully!",
+      "messageFailed": "Failed to send message. Please try again."
+    }
+  },
+  "footer": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skils",
+    "copyright": "SamyEssam. All rigths reserved"
+  }
+}
+

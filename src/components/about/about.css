@@ -36,6 +36,10 @@
   margin-bottom: var(--mb-2-5);
 }
 
+html[dir="rtl"] .about__description {
+  padding: 0 0 0 4rem;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
@@ -58,6 +62,10 @@
   .about__description {
     padding: 0 5rem;
     margin-bottom: 2rem;
+  }
+  
+  html[dir="rtl"] .about__description {
+    padding: 0 5rem;
   }
 }
 

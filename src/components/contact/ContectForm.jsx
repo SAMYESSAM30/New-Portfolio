@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -6,6 +7,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 
 const ContectForm = () => {
+  const { t } = useTranslation();
   const form = useRef();
 
   const sendEmail = (values, { resetForm }) => {
@@ -18,14 +20,14 @@ const ContectForm = () => {
       )
       .then((result) => {
         if (result.status === 200) {
-          toast.success("Message sent successfully!", {
+          toast.success(t("contact.form.messageSent"), {
             position: "top-right",
           });
           resetForm();
         }
       })
       .catch((error) => {
-        toast.error("Failed to send message. Please try again.", {
+        toast.error(t("contact.form.messageFailed"), {
           position: "top-right",
         });
       });
@@ -38,13 +40,13 @@ const ContectForm = () => {
       project: "",
     },
     validationSchema: Yup.object({
-      name: Yup.string().required("Name is required"),
+      name: Yup.string().required(t("contact.form.nameRequired")),
       email: Yup.string()
-        .email("Invalid email address")
-        .required("Email is required"),
+        .email(t("contact.form.emailInvalid"))
+        .required(t("contact.form.emailRequired")),
       project: Yup.string()
-        .min(10, "Project details must be at least 10 characters")
-        .required("Project is required"),
+        .min(10, t("contact.form.projectMinLength"))
+        .required(t("contact.form.projectRequired")),
     }),
     onSubmit: sendEmail,
   });
@@ -54,7 +56,7 @@ const ContectForm = () => {
       <form ref={form} onSubmit={formik.handleSubmit} className="contact__form">
         <div className="contact__form-div">
           <label htmlFor="name" className="contact__form-tag">
-            Name
+            {t("contact.form.name")}
           </label>
           <input
             type="text"
@@ -62,7 +64,7 @@ const ContectForm = () => {
             className={`contact__form-input ${
               formik.touched.name && formik.errors.name ? "input-error" : ""
             }`}
-            placeholder="Insert your name"
+            placeholder={t("contact.form.namePlaceholder")}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.name}
@@ -73,7 +75,7 @@ const ContectForm = () => {
         ) : null}
         <div className="contact__form-div">
           <label htmlFor="email" className="contact__form-tag">
-            Mail
+            {t("contact.form.mail")}
           </label>
           <input
             type="email"
@@ -81,7 +83,7 @@ const ContectForm = () => {
             className={`contact__form-input ${
               formik.touched.email && formik.errors.email ? "input-error" : ""
             }`}
-            placeholder="Insert your email"
+            placeholder={t("contact.form.mailPlaceholder")}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
@@ -92,7 +94,7 @@ const ContectForm = () => {
         ) : null}
         <div className="contact__form-div contact__form-area">
           <label htmlFor="project" className="contact__form-tag">
-            Project
+            {t("contact.form.project")}
           </label>
           <textarea
             name="project"
@@ -103,7 +105,7 @@ const ContectForm = () => {
                 ? "input-error"
                 : ""
             }`}
-            placeholder="Write your project"
+            placeholder={t("contact.form.projectPlaceholder")}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.project}
@@ -113,7 +115,7 @@ const ContectForm = () => {
           <div className="error">{formik.errors.project}</div>
         ) : null}
         <button type="submit" className="button button--flex">
-          Send Message
+          {t("contact.form.sendMessage")}
           <svg
             className="button__icon"
             xmlns="http://www.w3.org/2000/svg"

@@ -1,0 +1,144 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "about": "عني",
+    "skills": "المهارات",
+    "services": "الخدمات",
+    "portfolio": "المشاريع",
+    "contact": "تواصل معي"
+  },
+  "home": {
+    "title": "سامي عصام",
+    "subtitle": "مطور واجهات أمامية",
+    "description": "تصميم حلول مبتكرة مع التركيز على المستخدم.",
+    "sayHello": "مرحباً"
+  },
+  "about": {
+    "title": "عني",
+    "subtitle": "مقدمة عني",
+    "description": "كشف رحلة تطوير الواجهات الأمامية، من البداية إلى الإتقان، التنقل بين الاتجاهات والأدوات وفن التفاعل مع المستخدم.",
+    "downloadCV": "تحميل السيرة الذاتية",
+    "experience": "الخبرة",
+    "experienceValue": "+3 سنوات عمل",
+    "completed": "مكتمل",
+    "completedValue": "+10 مشروع",
+    "support": "الدعم",
+    "supportValue": "متاح 24/7"
+  },
+  "skills": {
+    "title": "المهارات",
+    "subtitle": "مستواي التقني",
+    "frontendDeveloper": "مطور واجهات أمامية",
+    "backendDeveloper": "مطور خلفية"
+  },
+  "services": {
+    "title": "الخدمات",
+    "subtitle": "ما أقدمه",
+    "customWebDesign": {
+      "title": "تصميم مواقع مخصصة",
+      "viewMore": "عرض المزيد",
+      "description": "خدمة مع أكثر من 3 سنوات من الخبرة. تقديم عمل عالي الجودة للعملاء والشركات.",
+      "items": {
+        "item1": "تصاميم مخصصة تعكس هوية علامتك التجارية.",
+        "item2": "تخطيطات متجاوبة لتجربة مستخدم سلسة.",
+        "item3": "دمج مبادئ واجهة المستخدم/تجربة المستخدم الحديثة.",
+        "item4": "التوافق مع المتصفحات والأجهزة المختلفة."
+      }
+    },
+    "frontendDevelopment": {
+      "title": "تطوير الواجهات الأمامية",
+      "viewMore": "عرض المزيد",
+      "description": "خدمة مع أكثر من 3 سنوات من الخبرة. تقديم عمل عالي الجودة للعملاء والشركات.",
+      "items": {
+        "item1": "بناء واجهات مستخدم تفاعلية وجذابة.",
+        "item2": "استخدام HTML و CSS وأطر عمل JavaScript.",
+        "item3": "ضمان كفاءة الكود وتحسينه.",
+        "item4": "تنفيذ معايير إمكانية الوصول للشمولية."
+      }
+    },
+    "fullStackSolutions": {
+      "title": "حلول كاملة",
+      "viewMore": "عرض المزيد",
+      "description": "خدمة مع أكثر من 3 سنوات من الخبرة. تقديم عمل عالي الجودة للعملاء والشركات.",
+      "items": {
+        "item1": "تطوير مواقع ديناميكية مع تكامل الواجهة الأمامية والخلفية.",
+        "item2": "إنشاء واجهات برمجة تطبيقات RESTful لتبادل البيانات.",
+        "item3": "تصميم وإدارة قواعد البيانات.",
+        "item4": "دعم النشر والصيانة."
+      }
+    }
+  },
+  "qualification": {
+    "title": "المؤهلات",
+    "subtitle": "رحلتي الشخصية",
+    "education": "التعليم",
+    "experience": "الخبرة",
+    "internship": "تدريب في تطوير الواجهات الأمامية",
+    "internshipLocation": "مصر - Syntrum Solutions",
+    "bachelor": "درجة البكالوريوس في نظم المعلومات الإدارية",
+    "bachelorLocation": "مصر - أكاديمية طيبة",
+    "frontendDeveloperNHC": "مطور واجهات أمامية",
+    "frontendDeveloperNHCLocation": "الشركة الوطنية للإسكان - عن بُعد",
+    "frontendDeveloperE2E": "مطور واجهات أمامية",
+    "frontendDeveloperE2ELocation": "E2E County - في الموقع",
+    "frontendDeveloperSyntrum": "مطور واجهات أمامية",
+    "frontendDeveloperSyntrumLocation": "Syntrum Solutions - هجين",
+    "frontendDeveloperFreelance": "مطور واجهات أمامية",
+    "frontendDeveloperFreelanceLocation": "عمل حر - عن بُعد",
+    "netDeveloper": "مطور .Net",
+    "netDeveloperLocation": "عمل حر - عن بُعد",
+    "current": "حالياً"
+  },
+  "portfolio": {
+    "title": "المشاريع",
+    "subtitle": "أحدث الأعمال",
+    "all": "الكل",
+    "vanillaJs": "فانيلا جي اس",
+    "reactJs": "رياكت جي اس",
+    "nextJs": "نكست جي اس",
+    "demo": "عرض",
+    "projects": {
+      "generalAuthority": "الهيئة العامة للعقارات",
+      "zeroDryTime": "زيرو دري تايم",
+      "syntrumSolutions": "سينترم سولوشنز",
+      "e2eCounty": "E2E كوينت",
+      "travwareB2E": "تراڤوير B2E",
+      "travwareB2C": "تراڤوير B2C",
+      "hakahanaWebsite": "موقع هاكاهانا",
+      "corsqool": "كورسكول"
+    }
+  },
+  "contact": {
+    "title": "تواصل معي",
+    "subtitle": "اتصل بي",
+    "talkToMe": "تحدث معي",
+    "writeMeYourProject": "اكتب لي مشروعك",
+    "email": "البريد الإلكتروني",
+    "whatsapp": "واتساب",
+    "instagram": "إنستجرام",
+    "writeMe": "اكتب لي",
+    "form": {
+      "name": "الاسم",
+      "namePlaceholder": "أدخل اسمك",
+      "nameRequired": "الاسم مطلوب",
+      "mail": "البريد",
+      "mailPlaceholder": "أدخل بريدك الإلكتروني",
+      "emailInvalid": "عنوان بريد إلكتروني غير صحيح",
+      "emailRequired": "البريد الإلكتروني مطلوب",
+      "project": "المشروع",
+      "projectPlaceholder": "اكتب مشروعك",
+      "projectMinLength": "تفاصيل المشروع يجب أن تكون 10 أحرف على الأقل",
+      "projectRequired": "المشروع مطلوب",
+      "sendMessage": "إرسال الرسالة",
+      "messageSent": "تم إرسال الرسالة بنجاح!",
+      "messageFailed": "فشل إرسال الرسالة. يرجى المحاولة مرة أخرى."
+    }
+  },
+  "footer": {
+    "about": "عني",
+    "projects": "المشاريع",
+    "skills": "المهارات",
+    "copyright": "سامي عصام. جميع الحقوق محفوظة"
+  }
+}
+

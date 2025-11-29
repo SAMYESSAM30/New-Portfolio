@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./footer.css";
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="footer">
       <div className="footer__container container">
@@ -8,17 +10,17 @@ const Footer = () => {
         <ul className="footer__list">
           <li>
             <a href="#about" className="footer__link">
-              About
+              {t("footer.about")}
             </a>
           </li>
           <li>
             <a href="#portfolio" className="footer__link">
-              Projects
+              {t("footer.projects")}
             </a>
           </li>
           <li>
             <a href="#skills" className="footer__link">
-              Skils
+              {t("footer.skills")}
             </a>
           </li>
         </ul>
@@ -51,7 +53,7 @@ const Footer = () => {
         </div>
 
         <span className="footer__copy">
-          &#169;SamyEssam. All rigths reserved
+          &#169;{t("footer.copyright")}
         </span>
       </div>
     </footer>

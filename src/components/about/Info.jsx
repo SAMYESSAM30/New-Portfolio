@@ -1,6 +1,26 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Info = () => {
+  const { t } = useTranslation();
+  const data = [
+    {
+      num: 1,
+      title: t("about.experience"),
+      subtitle: t("about.experienceValue"),
+      icon: <i className="bx bx-award about__icon"></i>,
+    },
+    {
+      title: t("about.completed"),
+      subtitle: t("about.completedValue"),
+      icon: <i className="bx bx-briefcase-alt about__icon"></i>,
+    },
+    {
+      title: t("about.support"),
+      subtitle: t("about.supportValue"),
+      icon: <i className="bx bx-support about__icon"></i>,
+    },
+  ];
   return (
     <div>
       <div className="about__info grid">
@@ -17,21 +37,3 @@ const Info = () => {
 };
 
 export default Info;
-let data = [
-  {
-    num: 1,
-    title: "Experiennce",
-    subtitle: "3 Years Working",
-    icon: <i className="bx bx-award about__icon"></i>,
-  },
-  {
-    title: "Completed",
-    subtitle: "10 + Projects",
-    icon: <i className="bx bx-briefcase-alt about__icon"></i>,
-  },
-  {
-    title: "Support",
-    subtitle: "Online 24/7",
-    icon: <i className="bx bx-support about__icon"></i>,
-  },
-];

@@ -64,6 +64,10 @@
   transform: translateX(0.25rem);
 }
 
+html[dir="rtl"] .work__button:hover .work__button-icon {
+  transform: translateX(-0.25rem);
+}
+
 /* active work */
 
 .active-work {

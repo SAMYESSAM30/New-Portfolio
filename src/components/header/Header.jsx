@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./Header.css";
 const Header = () => {
+  const { t, i18n } = useTranslation();
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
     if (this.scrollY >= 80) header.classList.add("scroll-header");
@@ -25,7 +27,7 @@ const Header = () => {
                   activeNav === "#home" ? "nav__link active-link" : "nav__link"
                 }
               >
-                <i className="uil uil-estate nav__icon"></i> Home
+                <i className="uil uil-estate nav__icon"></i> {t("nav.home")}
               </a>
             </li>
           </ul>
@@ -38,7 +40,7 @@ const Header = () => {
                   activeNav === "#about" ? "nav__link active-link" : "nav__link"
                 }
               >
-                <i className="uil uil-user nav__icon"></i> About
+                <i className="uil uil-user nav__icon"></i> {t("nav.about")}
               </a>
             </li>
             {/*  */}
@@ -55,7 +57,7 @@ const Header = () => {
                 }
               >
                 <i className="uil uil-file-alt nav__icon"></i>
-                Skills
+                {t("nav.skills")}
               </a>
             </li>
           </ul>
@@ -70,7 +72,7 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-briefcase-alt nav__icon"></i>Services
+                <i className="uil uil-briefcase-alt nav__icon"></i>{t("nav.services")}
               </a>
             </li>
           </ul>
@@ -86,7 +88,7 @@ const Header = () => {
                 }
               >
                 <i className="uil uil-scenery nav__icon"></i>
-                Portfolio
+                {t("nav.portfolio")}
               </a>
             </li>
           </ul>
@@ -102,7 +104,7 @@ const Header = () => {
                 }
               >
                 <i className="uil uil-message nav__icon"></i>
-                Contact
+                {t("nav.contact")}
               </a>
             </li>
           </ul>
@@ -113,6 +115,24 @@ const Header = () => {
         </div>
         <div className="nav__toggle" onClick={() => ShowMenu(!Toggle)}>
           <i className="uil uil-apps"></i>
+        </div>
+        <div className="nav__language">
+          {i18n.language !== "en" && (
+            <button
+              onClick={() => i18n.changeLanguage("en")}
+              className="language-btn"
+            >
+              EN
+            </button>
+          )}
+          {i18n.language !== "ar" && (
+            <button
+              onClick={() => i18n.changeLanguage("ar")}
+              className="language-btn"
+            >
+              AR
+            </button>
+          )}
         </div>
       </nav>
     </header>

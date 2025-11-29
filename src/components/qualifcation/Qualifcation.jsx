@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./qualifcation.css";
 export const Qualifcation = () => {
+  const { t } = useTranslation();
   const [toggleState, setToggleState] = useState(1);
   const toggleTop = (index) => {
     setToggleState(index);
@@ -8,8 +10,8 @@ export const Qualifcation = () => {
 
   return (
     <section className="qualifcation section" id="qualifcation">
-      <h2 className="section__title">Qualifcation</h2>
-      <span className="section__subtitle">My Personel journey</span>
+      <h2 className="section__title">{t("qualification.title")}</h2>
+      <span className="section__subtitle">{t("qualification.subtitle")}</span>
 
       <div className="qualifcation__container container">
         <div className="qualifcation__tabs">
@@ -22,7 +24,7 @@ export const Qualifcation = () => {
             onClick={() => toggleTop(1)}
           >
             <i className="uil uil-graduation-cap qualifcation__icon"></i>
-            Education
+            {t("qualification.education")}
           </div>
 
           <div
@@ -34,7 +36,7 @@ export const Qualifcation = () => {
             onClick={() => toggleTop(2)}
           >
             <i className="uil uil-briefcase-alt qualifcation__icon"></i>
-            Experience
+            {t("qualification.experience")}
           </div>
         </div>
         {/* education */}
@@ -50,10 +52,10 @@ export const Qualifcation = () => {
             <div className="qualifcation__data">
               <div>
                 <h3 className="qualifcation__title">
-                  Internship in Frontend developer
+                  {t("qualification.internship")}
                 </h3>
                 <span className="qualifcation__subtitle">
-                  Egy - Syntrum Solutions
+                  {t("qualification.internshipLocation")}
                 </span>
                 <div className="qualifcation__calender">
                   <i className="uil uil-calendar-alt">2022 - 2022</i>
@@ -73,10 +75,10 @@ export const Qualifcation = () => {
               </div>{" "}
               <div>
                 <h3 className="qualifcation__title">
-                  bachelor’s degree in MIS
+                  {t("qualification.bachelor")}
                 </h3>
                 <span className="qualifcation__subtitle">
-                  Egy - Thebes Academy
+                  {t("qualification.bachelorLocation")}
                 </span>
                 <div className="qualifcation__calender">
                   <i className="uil uil-calendar-alt"> 2018 - 2020 </i>
@@ -101,12 +103,12 @@ export const Qualifcation = () => {
                 <span className="qualifcation__line"></span>
               </div>{" "}
               <div>
-                <h3 className="qualifcation__title">Frontend Developer </h3>
+                <h3 className="qualifcation__title">{t("qualification.frontendDeveloperNHC")} </h3>
                 <span className="qualifcation__subtitle">
-                  NHC (National Housing Company) - Remote
+                  {t("qualification.frontendDeveloperNHCLocation")}
                 </span>
                 <div className="qualifcation__calender">
-                  <i className="uil uil-calendar-alt">2023 - Current </i>
+                  <i className="uil uil-calendar-alt">2023 - {t("qualification.current")} </i>
                 </div>
               </div>
             </div>
@@ -114,9 +116,9 @@ export const Qualifcation = () => {
             <div className="qualifcation__data">
               {" "}
               <div>
-                <h3 className="qualifcation__title">Frontend Developer</h3>
+                <h3 className="qualifcation__title">{t("qualification.frontendDeveloperE2E")}</h3>
                 <span className="qualifcation__subtitle">
-                  E2E County - on side
+                  {t("qualification.frontendDeveloperE2ELocation")}
                 </span>
                 <div className="qualifcation__calender">
                   <i className="uil uil-calendar-alt">2023 - 2023</i>
@@ -135,9 +137,9 @@ export const Qualifcation = () => {
                 <span className="qualifcation__line"></span>
               </div>{" "}
               <div>
-                <h3 className="qualifcation__title">Frontend Developer </h3>
+                <h3 className="qualifcation__title">{t("qualification.frontendDeveloperSyntrum")} </h3>
                 <span className="qualifcation__subtitle">
-                  Syntrum Solutions - hybrid
+                  {t("qualification.frontendDeveloperSyntrumLocation")}
                 </span>
                 <div className="qualifcation__calender">
                   <i className="uil uil-calendar-alt"> 2022 - 2023 </i>
@@ -148,12 +150,12 @@ export const Qualifcation = () => {
             <div className="qualifcation__data">
               {" "}
               <div>
-                <h3 className="qualifcation__title">Frontend Developer</h3>
+                <h3 className="qualifcation__title">{t("qualification.frontendDeveloperFreelance")}</h3>
                 <span className="qualifcation__subtitle">
-                  Freelance - Remote
+                  {t("qualification.frontendDeveloperFreelanceLocation")}
                 </span>
                 <div className="qualifcation__calender">
-                  <i className="uil uil-calendar-alt">2021 - Current</i>
+                  <i className="uil uil-calendar-alt">2021 - {t("qualification.current")}</i>
                 </div>
               </div>
               <div>
@@ -169,9 +171,9 @@ export const Qualifcation = () => {
                 <span className="qualifcation__line"></span>
               </div>{" "}
               <div>
-                <h3 className="qualifcation__title">.Net Developer</h3>
+                <h3 className="qualifcation__title">{t("qualification.netDeveloper")}</h3>
                 <span className="qualifcation__subtitle">
-                  Freelance - Remote
+                  {t("qualification.netDeveloperLocation")}
                 </span>
                 <div className="qualifcation__calender">
                   <i className="uil uil-calendar-alt"> 2020 - 2021 </i>
