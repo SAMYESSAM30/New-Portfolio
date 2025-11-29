@@ -249,8 +249,8 @@ This project is private and proprietary.
 **Samy Essam** - Frontend Developer
 
 - 📧 Email: samyessam2000@gmail.com
-- 💼 LinkedIn: [Your LinkedIn Profile]
-- 🐙 GitHub: [Your GitHub Profile]
+- 💼 LinkedIn:  [@Samy_Essam](https://www.linkedin.com/in/samy-essam30/)
+- 🐙 GitHub: [@Samy_Essam](https://github.com/SAMYESSAM30/New-Portfolio/)
 - 📱 WhatsApp: +201141627898
 - 📸 Instagram: [@santa__30__](https://www.instagram.com/santa__30__/)
 
