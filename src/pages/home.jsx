@@ -3,6 +3,7 @@ import React from "react";
 import About from "../components/about/About";
 import Header from "../components/header/Header";
 import Home from "../components/home/Home";
+import Loading from "../components/loading/Loading";
 
 import { Contact } from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
@@ -11,12 +12,13 @@ import Services from "../components/services/Services";
 import Skills from "../components/skills/Skills";
 import { Qualifcation } from "../components/qualifcation/Qualifcation";
 import Work from "../components/work/Work";
-// import Testimonials from "../components/testimonials/Testimonials";
+import Testimonials from "../components/testimonials/Testimonials";
 import "../App.css";
 
 const home = () => {
   return (
     <>
+      <Loading />
       <Header />
       <main className="main">
         <Home />

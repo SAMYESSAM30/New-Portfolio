@@ -52,6 +52,34 @@ body.dark-theme .work__card {
   margin-bottom: var(--mb-0-5);
 }
 
+.work__description {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  margin-bottom: var(--mb-1);
+  line-height: 1.5;
+}
+
+.work__technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: var(--mb-1);
+}
+
+.work__tech-tag {
+  font-size: var(--tiny-font-size);
+  padding: 0.25rem 0.5rem;
+  background-color: var(--title-color);
+  color: var(--container-color);
+  border-radius: 0.25rem;
+  font-weight: var(--font-medium);
+}
+
+body.dark-theme .work__tech-tag {
+  background-color: var(--title-color);
+  color: var(--container-color);
+}
+
 .work__button {
   color: var(--text-color);
   font-size: var(--small-font-size);

@@ -1,8 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 const Data = () => {
   const { t } = useTranslation();
+  const [displayText, setDisplayText] = useState("");
+  const fullText = t("home.subtitle");
+  const [isTyping, setIsTyping] = useState(true);
+
+  useEffect(() => {
+    if (!isTyping) return;
+    
+    let currentIndex = 0;
+    const typingInterval = setInterval(() => {
+      if (currentIndex < fullText.length) {
+        setDisplayText(fullText.substring(0, currentIndex + 1));
+        currentIndex++;
+      } else {
+        setIsTyping(false);
+        clearInterval(typingInterval);
+      }
+    }, 100);
+
+    return () => clearInterval(typingInterval);
+  }, [fullText, isTyping]);
+
   return (
     <div className="home__data">
       <h1 className="home__title">
@@ -57,7 +78,10 @@ const Data = () => {
           ></path>
         </svg>{" "}
       </h1>
-      <h3 className="home__subtitle">{t("home.subtitle")}</h3>
+      <h3 className="home__subtitle">
+        {displayText}
+        {isTyping && <span className="typing-cursor">|</span>}
+      </h3>
       <p className="home__description">
         {t("home.description")}{" "}
       </p>

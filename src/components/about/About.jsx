@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import AboutImg from "../../assets/about.jpeg";
 import CV from "../../assets/Samy Essam - Frontend Developer.pdf";
@@ -6,8 +6,36 @@ import Info from "./Info";
 import "./about.css";
 const About = () => {
   const { t } = useTranslation();
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px',
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section className="about section" id="about">
+    <section ref={sectionRef} className="about section" id="about">
       <h2 className="section__title">{t("about.title")}</h2>
       <span className="section__subtitle">{t("about.subtitle")}</span>
       <div className="about__container container grid">

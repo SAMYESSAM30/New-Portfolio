@@ -1,10 +1,38 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import "./services.css";
 import { useState } from "react";
 const Services = () => {
   const { t } = useTranslation();
   const [toggleState, setToggleState] = useState(0);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px',
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   const toggleTop = (index) => {
     setToggleState(index);
   };
@@ -65,7 +93,7 @@ const Services = () => {
   ];
   
   return (
-    <section className="services section" id="services">
+    <section ref={sectionRef} className="services section" id="services">
       <h2 className="section__title">{t("services.title")}</h2>
       <span className="section__subtitle">{t("services.subtitle")}</span>
       <div className="services__container container grid">

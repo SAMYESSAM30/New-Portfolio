@@ -10,15 +10,15 @@
   "home": {
     "title": "Samy Essam",
     "subtitle": "Frontend Developer",
-    "description": "Designing innovative solutions with user-centric focus.",
+    "description": "Passionate Frontend Developer crafting beautiful, responsive, and user-friendly web experiences. Transforming ideas into digital reality with modern technologies and best practices.",
     "sayHello": "Say Hello"
   },
   "about": {
     "title": "About Me",
     "subtitle": "My Introduction",
-    "description": "Unveiling the journey of front-end development, from inception to mastery, navigating through trends, tools, and the art of user interaction.",
+    "description": "I'm a passionate Frontend Developer with over 3 years of experience building modern, responsive web applications. I specialize in React, Next.js, and creating seamless user experiences. My journey in web development has been driven by a love for clean code, innovative design, and solving complex problems with elegant solutions.",
     "downloadCV": "Download CV",
-    "experience": "Experiennce",
+    "experience": "Experience",
     "experienceValue": "3 + Years Working",
     "completed": "Completed",
     "completedValue": "10 + Projects",
@@ -37,7 +37,7 @@
     "customWebDesign": {
       "title": "Custom Web Design",
       "viewMore": "View More",
-      "description": "Service with more than 3 years of experience. Providing quality work to clients and companies.",
+      "description": "Creating visually stunning and highly functional websites tailored to your brand. With over 3 years of experience, I deliver pixel-perfect designs that engage users and drive conversions.",
       "items": {
         "item1": "Tailored designs to reflect your brand identity.",
         "item2": "Responsive layouts for seamless user experience.",
@@ -48,7 +48,7 @@
     "frontendDevelopment": {
       "title": "Front-end Development",
       "viewMore": "View More",
-      "description": "Service with more than 3 years of experience. Providing quality work to clients and companies.",
+      "description": "Building fast, scalable, and maintainable frontend applications using the latest technologies. I transform designs into interactive experiences with clean, efficient code.",
       "items": {
         "item1": "Building interactive and engaging user interfaces.",
         "item2": "Utilizing HTML, CSS, and JavaScript frameworks.",
@@ -59,7 +59,7 @@
     "fullStackSolutions": {
       "title": "Full-stack Solutions",
       "viewMore": "View More",
-      "description": "Service with more than 3 years of experience. Providing quality work to clients and companies.",
+      "description": "End-to-end web development solutions combining frontend expertise with backend integration. I create robust applications that scale with your business needs.",
       "items": {
         "item1": "Developing dynamic websites with front-end and back-end integration.",
         "item2": "Creating RESTful APIs for data exchange.",
@@ -69,8 +69,8 @@
     }
   },
   "qualification": {
-    "title": "Qualifcation",
-    "subtitle": "My Personel journey",
+    "title": "Qualification",
+    "subtitle": "My Personal journey",
     "education": "Education",
     "experience": "Experience",
     "internship": "Internship in Frontend developer",
@@ -106,7 +106,21 @@
       "travwareB2C": "TravWare B2C",
       "hakahanaWebsite": "Hakahana WebSite",
       "corsqool": "Corsqool"
+    },
+    "descriptions": {
+      "generalAuthority": "A comprehensive real estate services platform with advanced features and seamless user experience.",
+      "zeroDryTime": "Modern web application for zero dry time solutions with responsive design and intuitive interface.",
+      "syntrumSolutions": "Corporate website showcasing innovative solutions and services with modern design principles.",
+      "e2eCounty": "Full-featured county management system with robust functionality and elegant design.",
+      "travwareB2E": "Business-to-enterprise travel management platform with comprehensive booking and management features.",
+      "travwareB2C": "Consumer-focused travel booking platform with user-friendly interface and seamless experience.",
+      "hakahanaWebsite": "Creative website design with smooth animations and engaging user interactions.",
+      "corsqool": "Educational platform with interactive features and comprehensive course management system."
     }
+  },
+  "testimonials": {
+    "title": "My Clients say",
+    "subtitle": "Testimonial"
   },
   "contact": {
     "title": "Get in touch",
@@ -115,7 +129,7 @@
     "writeMeYourProject": "Write me your project",
     "email": "Email",
     "whatsapp": "Whatsapp",
-    "instagram": "Instegram",
+    "instagram": "Instagram",
     "writeMe": "Write me",
     "form": {
       "name": "Name",
@@ -137,8 +151,8 @@
   "footer": {
     "about": "About",
     "projects": "Projects",
-    "skills": "Skils",
-    "copyright": "SamyEssam. All rigths reserved"
+    "skills": "Skills",
+    "copyright": "SamyEssam. All rights reserved"
   }
 }
 
