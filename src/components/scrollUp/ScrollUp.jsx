@@ -1,14 +1,40 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./scrollup.css";
+
 const ScrollUp = () => {
-  window.addEventListener("scroll", function () {
-    const scrollUp = document.querySelector(".scrollup");
-    if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
-    else scrollUp.classList.remove("show-scroll");
-  });
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 560) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    // Throttle scroll event for better performance
+    let ticking = false;
+    const throttledScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", throttledScroll, { passive: true });
+    
+    return () => {
+      window.removeEventListener("scroll", throttledScroll);
+    };
+  }, []);
+
   return (
     <a
-      className="scrollup"
+      className={`scrollup ${isVisible ? "show-scroll" : ""}`}
       href="#top"
       onClick={(e) => {
         e.preventDefault();
