@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import ContectForm from "./ContectForm";
+import { trackExternalLink } from "../../utils/analytics";
 import "./contact.css";
 
 export const Contact = () => {
@@ -54,6 +55,7 @@ export const Contact = () => {
               <a
                 href="mailto:samyessam2000@gmail.com"
                 className="contact__button"
+                onClick={() => trackExternalLink("mailto:samyessam2000@gmail.com")}
               >
                 {t("contact.writeMe")}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -69,6 +71,7 @@ export const Contact = () => {
                 className="contact__button"
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => trackExternalLink("https://api.whatsapp.com/send?phone=201141627898&text=Hello, more information!")}
               >
                 {t("contact.writeMe")}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -84,6 +87,7 @@ export const Contact = () => {
                 target="_blank"
                 className="contact__button"
                 rel="noreferrer"
+                onClick={() => trackExternalLink("https://www.instagram.com/santa__30__/")}
               >
                 {t("contact.writeMe")}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>

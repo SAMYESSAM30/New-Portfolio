@@ -3,10 +3,15 @@ import { useTranslation } from "react-i18next";
 import AboutImg from "../../assets/about.jpeg";
 import CV from "../../assets/Samy Essam - Frontend Developer.pdf";
 import Info from "./Info";
+import { trackFileDownload } from "../../utils/analytics";
 import "./about.css";
 const About = () => {
   const { t } = useTranslation();
   const sectionRef = useRef(null);
+
+  const handleDownloadCV = () => {
+    trackFileDownload("Samy Essam - Frontend Developer.pdf");
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -45,7 +50,7 @@ const About = () => {
           <p className="about__description">
             {t("about.description")}
           </p>
-          <a href={CV} download="" className="button button--flex">
+          <a href={CV} download="" className="button button--flex" onClick={handleDownloadCV}>
             {t("about.downloadCV")}
             <svg
               className="button__icon"
