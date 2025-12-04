@@ -229,6 +229,40 @@ To enable the contact form, configure EmailJS in `src/components/contact/Contect
 2. Get your Service ID, Template ID, and Public Key
 3. Update the configuration in the contact form component
 
+### Google Analytics Setup
+
+To enable Google Analytics tracking:
+
+1. **Create a Google Analytics account**
+   - Go to [Google Analytics](https://analytics.google.com/)
+   - Create a new property (GA4)
+   - Get your Measurement ID (format: `G-XXXXXXXXXX`)
+
+2. **Configure the Measurement ID**
+   - Create a `.env` file in the root directory
+   - Add your Measurement ID:
+     ```
+     REACT_APP_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+     ```
+   - Replace `G-XXXXXXXXXX` with your actual Measurement ID
+
+3. **Restart the development server**
+   ```bash
+   npm start
+   ```
+
+The app will automatically track:
+- Page views (when users navigate between pages)
+- Route changes
+- Custom events (button clicks, form submissions, file downloads, etc.)
+
+You can use the analytics utility functions from `src/utils/analytics.js` to track custom events:
+- `trackEvent()` - Track custom events
+- `trackButtonClick()` - Track button clicks
+- `trackFileDownload()` - Track file downloads
+- `trackFormSubmit()` - Track form submissions
+- `trackExternalLink()` - Track external link clicks
+
 ## 📚 Learn More
 
 - [React Documentation](https://reactjs.org/)

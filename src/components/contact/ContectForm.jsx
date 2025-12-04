@@ -5,6 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import { trackFormSubmit } from "../../utils/analytics";
 
 const ContectForm = () => {
   const { t } = useTranslation();
@@ -20,6 +21,8 @@ const ContectForm = () => {
       )
       .then((result) => {
         if (result.status === 200) {
+          // تتبع إرسال النموذج بنجاح
+          trackFormSubmit("contact_form");
           toast.success(t("contact.form.messageSent"), {
             position: "top-right",
           });
