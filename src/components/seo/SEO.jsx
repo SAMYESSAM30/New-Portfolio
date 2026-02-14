@@ -10,9 +10,9 @@ import { useLocation } from "react-router-dom";
  * @param {string} image - Open Graph image URL
  */
 const SEO = ({ 
-  title = "Samy Essam - Frontend Developer Portfolio",
-  description = "Frontend Developer with 3+ years of experience. Specialized in React, Next.js, and modern web development.",
-  keywords = "Frontend Developer, React Developer, Next.js, Web Development, Portfolio, JavaScript, TypeScript",
+  title = "Samy Essam - Frontend Engineer Portfolio",
+  description = "Frontend Engineer with 3+ years of experience. Specialized in React, Next.js, and modern web development.",
+  keywords = "Frontend Engineer, React Developer, Next.js, Web Development, Portfolio, JavaScript, TypeScript",
   image = "/logo512.png"
 }) => {
   const location = useLocation();

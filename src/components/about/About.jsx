@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import AboutImg from "../../assets/about.jpeg";
-import CV from "../../assets/Samy Essam - Frontend Developer.pdf";
+import CV from "../../assets/Samy-Essam-Senior-Frontend-Engineer.pdf";
 import Info from "./Info";
 import { trackFileDownload } from "../../utils/analytics";
 import "./about.css";
@@ -10,7 +10,7 @@ const About = () => {
   const sectionRef = useRef(null);
 
   const handleDownloadCV = () => {
-    trackFileDownload("Samy Essam - Frontend Developer.pdf");
+    trackFileDownload("Samy Essam - Frontend Engineer.pdf");
   };
 
   useEffect(() => {

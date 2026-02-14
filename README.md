@@ -280,7 +280,7 @@ This project is private and proprietary.
 
 ## 📧 Contact
 
-**Samy Essam** - Frontend Developer
+**Samy Essam** - Senior Frontend Engineer
 
 - 📧 Email: samyessam2000@gmail.com
 - 💼 LinkedIn:  [@Samy_Essam](https://www.linkedin.com/in/samy-essam30/)
